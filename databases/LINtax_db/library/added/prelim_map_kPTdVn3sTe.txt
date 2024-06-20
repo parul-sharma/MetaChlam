@@ -1,0 +1,1 @@
+TAXID	NZ_ABYG01000001.1|kraken:taxid|188	188

@@ -1,0 +1,1 @@
+TAXID	NC_022107.1|kraken:taxid|203	203

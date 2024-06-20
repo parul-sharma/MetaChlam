@@ -1,0 +1,1 @@
+TAXID	NC_017953.1|kraken:taxid|201	201

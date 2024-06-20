@@ -1,0 +1,1 @@
+TAXID	NC_020938.1|kraken:taxid|248	248

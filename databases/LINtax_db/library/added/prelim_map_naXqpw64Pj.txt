@@ -1,0 +1,1 @@
+TAXID	NC_000117.1|kraken:taxid|20	20

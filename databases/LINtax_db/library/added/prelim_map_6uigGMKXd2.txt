@@ -1,0 +1,1 @@
+TAXID	NC_020944.1|kraken:taxid|119	119

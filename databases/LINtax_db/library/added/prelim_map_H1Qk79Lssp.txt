@@ -1,0 +1,1 @@
+TAXID	NC_017440.1|kraken:taxid|43	43

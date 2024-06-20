@@ -1,0 +1,37 @@
+May-31 17:42:28.581 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf --help
+May-31 17:42:28.654 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+May-31 17:42:28.688 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+May-31 17:42:28.697 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-31 17:42:28.698 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-31 17:42:28.701 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+May-31 17:42:28.712 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-31 17:42:28.749 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+May-31 17:42:28.758 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@66e8997c] - activable => nextflow.secret.LocalSecretsProvider@66e8997c
+May-31 17:42:28.803 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+May-31 17:42:28.872 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [chaotic_turing] DSL2 - revision: b44a17e2ec
+May-31 17:42:28.874 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-31 17:42:28.875 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-31 17:42:28.959 [main] DEBUG nextflow.Session - Session UUID: 65428760-3096-497b-bd9d-654a55010cd0
+May-31 17:42:28.960 [main] DEBUG nextflow.Session - Run name: chaotic_turing
+May-31 17:42:28.960 [main] DEBUG nextflow.Session - Executor pool size: 4
+May-31 17:42:28.967 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-31 17:42:28.972 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-31 17:42:29.088 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC 
+  System: Linux 6.5.0-1021-azure
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 11988@codespaces-40befa [127.0.0.1]
+  CPUs: 4 - Mem: 15.6 GB (5.7 GB) - Swap: 0 (0)
+May-31 17:42:29.116 [main] DEBUG nextflow.Session - Work-dir: /workspaces/MetaChlam/work [ext2/ext3]
+May-31 17:42:29.117 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/MetaChlam/bin
+May-31 17:42:29.126 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-31 17:42:29.135 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-31 17:42:29.161 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-31 17:42:29.171 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+May-31 17:42:29.295 [main] DEBUG nextflow.Session - Session start
+May-31 17:42:29.799 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-31 17:42:29.811 [main] INFO  nextflow.Nextflow - 
+        Add Help Menu!!
+        

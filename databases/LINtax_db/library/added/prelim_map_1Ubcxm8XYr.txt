@@ -1,0 +1,1 @@
+TAXID	NZ_CP016420.1|kraken:taxid|102	102

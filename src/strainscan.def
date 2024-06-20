@@ -1,0 +1,54 @@
+Bootstrap: docker
+From: ubuntu:20.04
+
+%post
+    # Install dependencies for Miniconda
+    apt-get update && apt-get install -y \
+        wget \
+        bzip2 \
+        ca-certificates \
+        libglib2.0-0 \
+        libxext6 \
+        libsm6 \
+        libxrender1 \
+        git \
+        && apt-get clean
+
+    # Install Miniconda
+    wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh
+    /bin/bash /tmp/miniconda.sh -b -p /opt/conda
+    rm /tmp/miniconda.sh
+    /opt/conda/bin/conda clean -tipsy
+
+    # Add conda to the PATH
+    export PATH=/opt/conda/bin:$PATH
+
+    # Copy the YAML file into the container
+    mkdir -p /opt/envs
+    cp /workspaces/MetaChlam/strainscan_conda_env.yml /opt/envs/strainscan_env.yml
+
+    # Create the Conda environment
+    conda env create -f /opt/envs/strainscan_env.yml
+
+    # Activate the environment and install any additional packages
+    echo "source /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
+    echo "conda activate strainscan" >> ~/.bashrc
+
+%files
+    # Copy local database directories into the container
+   /workspaces/MetaChlam/ct_db /opt/strainscan/data/
+
+%environment
+    # Set up the environment
+    export PATH=/opt/conda/bin:$PATH
+    source /opt/conda/etc/profile.d/conda.sh
+    conda activate strainscan
+
+%runscript
+    # Define the default command to run
+    exec /bin/bash "$@"
+
+%labels
+    Author Parul_Sharma
+    Version v1.0
+    Description "Singularity container for running strainscan with Chlamydia trachomatis database"

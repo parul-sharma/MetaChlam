@@ -1,0 +1,1 @@
+TAXID	NZ_CP015300.1|kraken:taxid|222	222

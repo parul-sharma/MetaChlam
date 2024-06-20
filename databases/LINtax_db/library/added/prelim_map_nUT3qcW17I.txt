@@ -1,0 +1,1 @@
+TAXID	NZ_CP017734.1|kraken:taxid|75	75

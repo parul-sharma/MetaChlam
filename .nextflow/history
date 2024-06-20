@@ -1,0 +1,2 @@
+2024-05-31 15:40:42	5.8s	curious_monod	OK	b44a17e2ec3c278f4dbca3544e7bfc96	97badf65-163e-410f-a4e6-393639649c42	nextflow run main.nf
+2024-05-31 17:42:29	-	chaotic_turing	-	b44a17e2ec3c278f4dbca3544e7bfc96	65428760-3096-497b-bd9d-654a55010cd0	nextflow main.nf --help
