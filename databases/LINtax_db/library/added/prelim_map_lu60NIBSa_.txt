@@ -1,0 +1,1 @@
+TAXID	NC_022117.1|kraken:taxid|212	212

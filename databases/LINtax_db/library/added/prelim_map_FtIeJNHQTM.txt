@@ -1,0 +1,1 @@
+TAXID	NZ_CP007131.1|kraken:taxid|28	28

@@ -1,0 +1,1 @@
+TAXID	NC_017431.1|kraken:taxid|164	164
