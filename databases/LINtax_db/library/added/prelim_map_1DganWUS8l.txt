@@ -1,1 +1,0 @@
-TAXID	NZ_ACFJ01000001.1|kraken:taxid|194	194

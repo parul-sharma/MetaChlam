@@ -1,0 +1,6 @@
+name: metachlam
+channels:
+  - defaults
+dependencies:
+  - kraken2
+  - python=3.11

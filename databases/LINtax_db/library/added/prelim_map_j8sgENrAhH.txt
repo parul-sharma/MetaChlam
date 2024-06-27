@@ -1,1 +1,0 @@
-TAXID	NZ_CP015304.1|kraken:taxid|182	182

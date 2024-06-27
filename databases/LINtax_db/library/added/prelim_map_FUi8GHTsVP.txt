@@ -1,1 +1,0 @@
-TAXID	L2_434|kraken:taxid|265	265

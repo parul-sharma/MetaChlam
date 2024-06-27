@@ -1,1 +1,0 @@
-TAXID	NZ_CP017733.1|kraken:taxid|32	32
