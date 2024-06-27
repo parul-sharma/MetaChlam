@@ -1,1 +1,0 @@
-TAXID	NZ_CP017743.1|kraken:taxid|226	226

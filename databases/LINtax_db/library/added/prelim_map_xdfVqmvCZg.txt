@@ -1,1 +1,0 @@
-TAXID	NC_022121.1|kraken:taxid|58	58

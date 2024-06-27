@@ -1,1 +1,0 @@
-TAXID	B|kraken:taxid|288	288

@@ -1,1 +1,0 @@
-TAXID	NZ_ABYE01000001.1|kraken:taxid|56	56

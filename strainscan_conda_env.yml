@@ -1,7 +1,0 @@
-name: strainscan
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - strainscan
