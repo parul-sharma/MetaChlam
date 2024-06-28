@@ -1,4 +1,4 @@
-name: strainge
+name: strainge_conda_env
 channels:
   - conda-forge
   - bioconda
