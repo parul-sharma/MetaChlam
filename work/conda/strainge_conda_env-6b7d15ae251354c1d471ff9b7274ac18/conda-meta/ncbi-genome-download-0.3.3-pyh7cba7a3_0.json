@@ -1,0 +1,221 @@
+{
+  "build": "pyh7cba7a3_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "appdirs",
+    "python",
+    "requests >=2.4.3",
+    "tqdm"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/ncbi-genome-download-0.3.3-pyh7cba7a3_0",
+  "files": [
+    "bin/gimme_taxa.py",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/LICENSE",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/METADATA",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/RECORD",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/WHEEL",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/entry_points.txt",
+    "lib/python3.9/site-packages/ncbi_genome_download-0.3.3.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/ncbi_genome_download/__init__.py",
+    "lib/python3.9/site-packages/ncbi_genome_download/__main__.py",
+    "lib/python3.9/site-packages/ncbi_genome_download/config.py",
+    "lib/python3.9/site-packages/ncbi_genome_download/core.py",
+    "lib/python3.9/site-packages/ncbi_genome_download/jobs.py",
+    "lib/python3.9/site-packages/ncbi_genome_download/metadata.py",
+    "lib/python3.9/site-packages/ncbi_genome_download/summary.py",
+    "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/__main__.cpython-39.pyc",
+    "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/config.cpython-39.pyc",
+    "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/core.cpython-39.pyc",
+    "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/jobs.cpython-39.pyc",
+    "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/metadata.cpython-39.pyc",
+    "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/summary.cpython-39.pyc",
+    "bin/ncbi-genome-download",
+    "bin/ngd"
+  ],
+  "fn": "ncbi-genome-download-0.3.3-pyh7cba7a3_0.tar.bz2",
+  "license": "Apache Software License",
+  "link": {
+    "source": "/opt/conda/pkgs/ncbi-genome-download-0.3.3-pyh7cba7a3_0",
+    "type": 1
+  },
+  "md5": "0db2a66ad502c88ccaf733076012a7bd",
+  "name": "ncbi-genome-download",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/conda/pkgs/ncbi-genome-download-0.3.3-pyh7cba7a3_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/gimme_taxa.py",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/ncbi-genome-download_1690849705714/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "sha256": "6b3a53892844bae9b666db382616c6a891f740ce40f9ede96849050e52eaed8b",
+        "sha256_in_prefix": "d99d4ceefbb4df2f39b4556aa2e4a2fe39ce99bda345369f1f2cd7b54944ee20",
+        "size_in_bytes": 6359
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "sha256_in_prefix": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "size_in_bytes": 11357
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "260aa48bc8343ce7b4faa2f40824253da10764172584693b35729ee14c91e714",
+        "sha256_in_prefix": "260aa48bc8343ce7b4faa2f40824253da10764172584693b35729ee14c91e714",
+        "size_in_bytes": 10896
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "af56ee2aed1ba64081e95f96c84549c1a15fc529b621dc0bb44a2950a50c0302",
+        "sha256_in_prefix": "af56ee2aed1ba64081e95f96c84549c1a15fc529b621dc0bb44a2950a50c0302",
+        "size_in_bytes": 2216
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "937bd7af47343a2b4ed24f5e096065236c93627a5bfe7fc8d921b3aeb7d8ec76",
+        "sha256_in_prefix": "937bd7af47343a2b4ed24f5e096065236c93627a5bfe7fc8d921b3aeb7d8ec76",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "ced7661ed27e6b18cdf284e477922ee39df6396bcfe08a294c043131add4f231",
+        "sha256_in_prefix": "ced7661ed27e6b18cdf284e477922ee39df6396bcfe08a294c043131add4f231",
+        "size_in_bytes": 94
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "d50c0aea83fbbb4852afc6fba36d8e21f8684343e95bfca24581c4a65dc020b6",
+        "sha256_in_prefix": "d50c0aea83fbbb4852afc6fba36d8e21f8684343e95bfca24581c4a65dc020b6",
+        "size_in_bytes": 117
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download-0.3.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6fda30771a574228383c906294157a68c95a32ac519193d1411ea3f410a50067",
+        "sha256_in_prefix": "6fda30771a574228383c906294157a68c95a32ac519193d1411ea3f410a50067",
+        "size_in_bytes": 21
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "82a0fa2dddf7b4ca6e2d305938072be62d21625141c841223acdabf4e0017bd7",
+        "sha256_in_prefix": "82a0fa2dddf7b4ca6e2d305938072be62d21625141c841223acdabf4e0017bd7",
+        "size_in_bytes": 335
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "9986a34e15ab964878a14a0bb99893a356a774a634baa83c59eb9d10a40f269a",
+        "sha256_in_prefix": "9986a34e15ab964878a14a0bb99893a356a774a634baa83c59eb9d10a40f269a",
+        "size_in_bytes": 1098
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download/config.py",
+        "path_type": "hardlink",
+        "sha256": "55230bb825b5985bffd3232c0722e1204bc3722a9c1dd3705e32dab64f2257ca",
+        "sha256_in_prefix": "55230bb825b5985bffd3232c0722e1204bc3722a9c1dd3705e32dab64f2257ca",
+        "size_in_bytes": 12068
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download/core.py",
+        "path_type": "hardlink",
+        "sha256": "074b6f3b54d6ed0ab260a2002e06e71676522fa33e8827bf92d3c71921b2d6da",
+        "sha256_in_prefix": "074b6f3b54d6ed0ab260a2002e06e71676522fa33e8827bf92d3c71921b2d6da",
+        "size_in_bytes": 31086
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download/jobs.py",
+        "path_type": "hardlink",
+        "sha256": "361b26a336efe3d5565a52f94e15408860bff36970e766bb7905dbf204e5bdc3",
+        "sha256_in_prefix": "361b26a336efe3d5565a52f94e15408860bff36970e766bb7905dbf204e5bdc3",
+        "size_in_bytes": 852
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download/metadata.py",
+        "path_type": "hardlink",
+        "sha256": "89236e3fbddee9d64474332fb5a4724ca8f5b530c2b344c011f956e6b121d4e3",
+        "sha256_in_prefix": "89236e3fbddee9d64474332fb5a4724ca8f5b530c2b344c011f956e6b121d4e3",
+        "size_in_bytes": 2241
+      },
+      {
+        "_path": "site-packages/ncbi_genome_download/summary.py",
+        "path_type": "hardlink",
+        "sha256": "27a2cd251393283ebca7794ebfcb59e91432d312da61f934d0c6dd2d79e85428",
+        "sha256_in_prefix": "27a2cd251393283ebca7794ebfcb59e91432d312da61f934d0c6dd2d79e85428",
+        "size_in_bytes": 2044
+      },
+      {
+        "_path": "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/config.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/core.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/jobs.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/metadata.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/ncbi_genome_download/__pycache__/summary.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/ncbi-genome-download",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/ngd",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "ncbi-genome-download=0.3.3",
+  "sha256": "a190a0315caaee7431b2c64417c0e6d545cd964a239b25d221522079be1ee570",
+  "size": 30063,
+  "subdir": "noarch",
+  "timestamp": 1690849919000,
+  "url": "https://conda.anaconda.org/bioconda/noarch/ncbi-genome-download-0.3.3-pyh7cba7a3_0.tar.bz2",
+  "version": "0.3.3"
+}

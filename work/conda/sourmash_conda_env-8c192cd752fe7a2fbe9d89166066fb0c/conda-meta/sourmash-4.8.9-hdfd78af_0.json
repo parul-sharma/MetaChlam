@@ -1,0 +1,34 @@
+{
+  "build": "hdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "python",
+    "sourmash-minimal 4.8.9.*"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/sourmash-4.8.9-hdfd78af_0",
+  "files": [],
+  "fn": "sourmash-4.8.9-hdfd78af_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/opt/conda/pkgs/sourmash-4.8.9-hdfd78af_0",
+    "type": 1
+  },
+  "md5": "85e01388a83f6515707cb9fc9ada8361",
+  "name": "sourmash",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/conda/pkgs/sourmash-4.8.9-hdfd78af_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "sourmash",
+  "sha256": "22f97322d14d38584a5b5ba44471d609d434ba84c71962f0a8f743d55dca2d3a",
+  "size": 7965,
+  "subdir": "noarch",
+  "timestamp": 1718113645000,
+  "url": "https://conda.anaconda.org/bioconda/noarch/sourmash-4.8.9-hdfd78af_0.tar.bz2",
+  "version": "4.8.9"
+}

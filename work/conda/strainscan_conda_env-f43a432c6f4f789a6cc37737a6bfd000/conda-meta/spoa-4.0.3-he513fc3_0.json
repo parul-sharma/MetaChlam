@@ -1,0 +1,83 @@
+{
+  "build": "he513fc3_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.5.0",
+    "libstdcxx-ng >=7.5.0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/spoa-4.0.3-he513fc3_0",
+  "files": [
+    "bin/spoa",
+    "include/spoa/alignment_engine.hpp",
+    "include/spoa/architectures.hpp",
+    "include/spoa/graph.hpp",
+    "include/spoa/spoa.hpp",
+    "lib/libspoa.a"
+  ],
+  "fn": "spoa-4.0.3-he513fc3_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/opt/conda/pkgs/spoa-4.0.3-he513fc3_0",
+    "type": 1
+  },
+  "md5": "9be5bf0e819b26cbca7eebf3b02f73a0",
+  "name": "spoa",
+  "package_tarball_full_path": "/opt/conda/pkgs/spoa-4.0.3-he513fc3_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/spoa",
+        "path_type": "hardlink",
+        "sha256": "3bc9be15cb4783733b353dc20a9265fd05eed88add3d104a46827a8e8cf3fc40",
+        "sha256_in_prefix": "3bc9be15cb4783733b353dc20a9265fd05eed88add3d104a46827a8e8cf3fc40",
+        "size_in_bytes": 161904
+      },
+      {
+        "_path": "include/spoa/alignment_engine.hpp",
+        "path_type": "hardlink",
+        "sha256": "0f73012c7460a21bde56f4f989a35cd318f0f97c286861868a64d6ab7455586c",
+        "sha256_in_prefix": "0f73012c7460a21bde56f4f989a35cd318f0f97c286861868a64d6ab7455586c",
+        "size_in_bytes": 2094
+      },
+      {
+        "_path": "include/spoa/architectures.hpp",
+        "path_type": "hardlink",
+        "sha256": "a13b2cf080084cd2201e222578e6c4394d96aaa2bfddc625cc478ce719baffd8",
+        "sha256_in_prefix": "a13b2cf080084cd2201e222578e6c4394d96aaa2bfddc625cc478ce719baffd8",
+        "size_in_bytes": 261
+      },
+      {
+        "_path": "include/spoa/graph.hpp",
+        "path_type": "hardlink",
+        "sha256": "4a1ad848925fe7d8eab7b9326dc384f7a0c57dcfe9839d110a8d0e4cf8c387df",
+        "sha256_in_prefix": "4a1ad848925fe7d8eab7b9326dc384f7a0c57dcfe9839d110a8d0e4cf8c387df",
+        "size_in_bytes": 7493
+      },
+      {
+        "_path": "include/spoa/spoa.hpp",
+        "path_type": "hardlink",
+        "sha256": "3019399ab322edb0ea0076a05dcf0f67624fcb8c6e8e004ad642ab5a21f99161",
+        "sha256_in_prefix": "3019399ab322edb0ea0076a05dcf0f67624fcb8c6e8e004ad642ab5a21f99161",
+        "size_in_bytes": 163
+      },
+      {
+        "_path": "lib/libspoa.a",
+        "path_type": "hardlink",
+        "sha256": "201c7e43f4761a065247fb854c435cbdbca719a18dbcd944e23602be9c868f23",
+        "sha256_in_prefix": "201c7e43f4761a065247fb854c435cbdbca719a18dbcd944e23602be9c868f23",
+        "size_in_bytes": 218598
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e412c5a6a7a7d4e5945011cfb2db27ec5d4164eb31f2439931d47606411b20eb",
+  "size": 105700,
+  "subdir": "linux-64",
+  "timestamp": 1602069642000,
+  "url": "https://conda.anaconda.org/bioconda/linux-64/spoa-4.0.3-he513fc3_0.tar.bz2",
+  "version": "4.0.3"
+}

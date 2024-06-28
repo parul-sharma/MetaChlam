@@ -43,3 +43,9 @@
 2024-06-28 00:17:47	6.5s	clever_kirch	ERR	80aac6ce6123ff213794570a71acfc0c	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
 2024-06-28 00:19:47	47.5s	determined_swirles	OK	80aac6ce6123ff213794570a71acfc0c	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
 2024-06-28 01:46:45	-	silly_rubens	-	da9c42a8a4cde1907bdb9c47c24f6e94	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
+2024-06-28 01:48:55	3m 51s	gigantic_snyder	OK	6a7318c64b86c39f7463767edd2fc838	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
+2024-06-28 01:56:20	3.5s	big_carson	OK	6a7318c64b86c39f7463767edd2fc838	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
+2024-06-28 05:00:52	40.3s	festering_blackwell	ERR	9588a5e4c756001590edaf4babce1ab7	ebc8779f-0d89-417e-931b-6de3f807aebe	nextflow run main.nf
+2024-06-28 05:07:24	21.3s	wise_hawking	ERR	9588a5e4c756001590edaf4babce1ab7	39c430f1-acf6-4c77-aba4-f6b248ce0f92	nextflow run main.nf
+2024-06-28 05:12:27	6.2s	trusting_davinci	OK	d448845263407d7bf30d48bb3c87bb83	39c430f1-acf6-4c77-aba4-f6b248ce0f92	nextflow run main.nf -resume
+2024-06-28 05:50:21	4.2s	astonishing_linnaeus	OK	eb4f6551525c071fe1f4f3e32416c2e1	39c430f1-acf6-4c77-aba4-f6b248ce0f92	nextflow run main.nf -resume

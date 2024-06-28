@@ -1,0 +1,301 @@
+{
+  "build": "pl5321hdcf5f25_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "_openmp_mutex >=4.5",
+    "blast",
+    "libgcc-ng >=12",
+    "libstdcxx-ng >=12",
+    "libzlib >=1.2.13,<2.0a0",
+    "perl >=5.32.1,<5.33.0a0 *_perl5",
+    "rsync",
+    "tar",
+    "wget",
+    "zlib"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/kraken2-2.1.3-pl5321hdcf5f25_1",
+  "files": [
+    "bin/kraken2",
+    "bin/kraken2-build",
+    "bin/kraken2-inspect",
+    "share/kraken2-2.1.3-1/libexec/16S_gg_installation.sh",
+    "share/kraken2-2.1.3-1/libexec/16S_rdp_installation.sh",
+    "share/kraken2-2.1.3-1/libexec/16S_silva_installation.sh",
+    "share/kraken2-2.1.3-1/libexec/add_to_library.sh",
+    "share/kraken2-2.1.3-1/libexec/build_db",
+    "share/kraken2-2.1.3-1/libexec/build_gg_taxonomy.pl",
+    "share/kraken2-2.1.3-1/libexec/build_kraken2_db.sh",
+    "share/kraken2-2.1.3-1/libexec/build_rdp_taxonomy.pl",
+    "share/kraken2-2.1.3-1/libexec/build_silva_taxonomy.pl",
+    "share/kraken2-2.1.3-1/libexec/classify",
+    "share/kraken2-2.1.3-1/libexec/clean_db.sh",
+    "share/kraken2-2.1.3-1/libexec/cp_into_tempfile.pl",
+    "share/kraken2-2.1.3-1/libexec/download_genomic_library.sh",
+    "share/kraken2-2.1.3-1/libexec/download_taxonomy.sh",
+    "share/kraken2-2.1.3-1/libexec/dump_table",
+    "share/kraken2-2.1.3-1/libexec/estimate_capacity",
+    "share/kraken2-2.1.3-1/libexec/k2",
+    "share/kraken2-2.1.3-1/libexec/k2mask",
+    "share/kraken2-2.1.3-1/libexec/kraken2",
+    "share/kraken2-2.1.3-1/libexec/kraken2-build",
+    "share/kraken2-2.1.3-1/libexec/kraken2-inspect",
+    "share/kraken2-2.1.3-1/libexec/kraken2lib.pm",
+    "share/kraken2-2.1.3-1/libexec/lookup_accession_numbers",
+    "share/kraken2-2.1.3-1/libexec/lookup_accession_numbers.pl",
+    "share/kraken2-2.1.3-1/libexec/make_seqid2taxid_map.pl",
+    "share/kraken2-2.1.3-1/libexec/mask_low_complexity.sh",
+    "share/kraken2-2.1.3-1/libexec/rsync_from_ncbi.pl",
+    "share/kraken2-2.1.3-1/libexec/scan_fasta_file.pl",
+    "share/kraken2-2.1.3-1/libexec/standard_installation.sh"
+  ],
+  "fn": "kraken2-2.1.3-pl5321hdcf5f25_1.tar.bz2",
+  "license": "GPLv3",
+  "link": {
+    "source": "/opt/conda/pkgs/kraken2-2.1.3-pl5321hdcf5f25_1",
+    "type": 1
+  },
+  "md5": "41b72c2983a41cb203db00f73b7f521c",
+  "name": "kraken2",
+  "package_tarball_full_path": "/opt/conda/pkgs/kraken2-2.1.3-pl5321hdcf5f25_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/kraken2",
+        "path_type": "softlink",
+        "sha256": "9bf0a0b03e42ae9b987c7626fd0a0732ac5bb8ce03329d576558ee0bc1248b92",
+        "size_in_bytes": 8409
+      },
+      {
+        "_path": "bin/kraken2-build",
+        "path_type": "softlink",
+        "sha256": "7b083312423217185c48b5978392fb5ee1a653715d2824429ed078c3ae2a0055",
+        "size_in_bytes": 11203
+      },
+      {
+        "_path": "bin/kraken2-inspect",
+        "path_type": "softlink",
+        "sha256": "ad53681b070c41530625beb528602288a2f14d431a10d59e49d74c2a1d7c235e",
+        "size_in_bytes": 2971
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/16S_gg_installation.sh",
+        "path_type": "hardlink",
+        "sha256": "82caac589b49d00581fad212861082f90454f35ba9775285757690108a8dbf2c",
+        "sha256_in_prefix": "82caac589b49d00581fad212861082f90454f35ba9775285757690108a8dbf2c",
+        "size_in_bytes": 959
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/16S_rdp_installation.sh",
+        "path_type": "hardlink",
+        "sha256": "953580ef641e7711fbfe02ee4218d8edbcf02d0cb89c9b536b64e2c9ebea6ae8",
+        "sha256_in_prefix": "953580ef641e7711fbfe02ee4218d8edbcf02d0cb89c9b536b64e2c9ebea6ae8",
+        "size_in_bytes": 956
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/16S_silva_installation.sh",
+        "path_type": "hardlink",
+        "sha256": "e445d6b8e79098bb70b66c575a067482782159d55883a645fd7c5bf389713b4f",
+        "sha256_in_prefix": "e445d6b8e79098bb70b66c575a067482782159d55883a645fd7c5bf389713b4f",
+        "size_in_bytes": 1193
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/add_to_library.sh",
+        "path_type": "hardlink",
+        "sha256": "dcc33e02993229697e64aff5f55b1c6ab784504f0dbd78d6267e1d226da61c43",
+        "sha256_in_prefix": "dcc33e02993229697e64aff5f55b1c6ab784504f0dbd78d6267e1d226da61c43",
+        "size_in_bytes": 947
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/build_db",
+        "path_type": "hardlink",
+        "sha256": "6814a198dd48ffbc74ccadfa6a598ec39ea2ccfcdaafba435fefdbcbdc035904",
+        "sha256_in_prefix": "6814a198dd48ffbc74ccadfa6a598ec39ea2ccfcdaafba435fefdbcbdc035904",
+        "size_in_bytes": 133440
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/build_gg_taxonomy.pl",
+        "path_type": "hardlink",
+        "sha256": "16d5193c27b72f826bf390ece00e5d91d2ba15d35aaf7e86273c9c2cbe452267",
+        "sha256_in_prefix": "16d5193c27b72f826bf390ece00e5d91d2ba15d35aaf7e86273c9c2cbe452267",
+        "size_in_bytes": 2438
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/build_kraken2_db.sh",
+        "path_type": "hardlink",
+        "sha256": "8d10163a6baae9dd7e20266d88e051432a430afa9fd0f9b4add8de0df1c85a62",
+        "sha256_in_prefix": "8d10163a6baae9dd7e20266d88e051432a430afa9fd0f9b4add8de0df1c85a62",
+        "size_in_bytes": 4654
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/build_rdp_taxonomy.pl",
+        "path_type": "hardlink",
+        "sha256": "d21cbb0ae27eb40f7103a0d701cc44fda659dcb7d01741b8b15af840df559384",
+        "sha256_in_prefix": "d21cbb0ae27eb40f7103a0d701cc44fda659dcb7d01741b8b15af840df559384",
+        "size_in_bytes": 2191
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/build_silva_taxonomy.pl",
+        "path_type": "hardlink",
+        "sha256": "f23fe6e0ca587db18d4826d024c28e97df972d8635b7ff1e73e5681c88f81ff2",
+        "sha256_in_prefix": "f23fe6e0ca587db18d4826d024c28e97df972d8635b7ff1e73e5681c88f81ff2",
+        "size_in_bytes": 1269
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/classify",
+        "path_type": "hardlink",
+        "sha256": "52cf0fe1eaa8393aed521edd35b708bc6510cb9b069a429506e1b8f749220428",
+        "sha256_in_prefix": "52cf0fe1eaa8393aed521edd35b708bc6510cb9b069a429506e1b8f749220428",
+        "size_in_bytes": 254024
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/clean_db.sh",
+        "path_type": "hardlink",
+        "sha256": "c635988384b1dd83189834a72789ee514cab6f1eeef6d1c4939b7775ed713570",
+        "sha256_in_prefix": "c635988384b1dd83189834a72789ee514cab6f1eeef6d1c4939b7775ed713570",
+        "size_in_bytes": 583
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/cp_into_tempfile.pl",
+        "path_type": "hardlink",
+        "sha256": "078e24937f58099b1fdce1bcd43e4613ccd7c12106e6b4173174dcd3b26d2f11",
+        "sha256_in_prefix": "078e24937f58099b1fdce1bcd43e4613ccd7c12106e6b4173174dcd3b26d2f11",
+        "size_in_bytes": 1277
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/download_genomic_library.sh",
+        "path_type": "hardlink",
+        "sha256": "21414d0f42fc0f4bfa55bdc1f525c60b5fee3451c5b13c275022d73a0ade5452",
+        "sha256_in_prefix": "21414d0f42fc0f4bfa55bdc1f525c60b5fee3451c5b13c275022d73a0ade5452",
+        "size_in_bytes": 4497
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/download_taxonomy.sh",
+        "path_type": "hardlink",
+        "sha256": "7e545a0f25db9add4111767ee57c1688004acfd3d7efcb8502abdc18ed29b835",
+        "sha256_in_prefix": "7e545a0f25db9add4111767ee57c1688004acfd3d7efcb8502abdc18ed29b835",
+        "size_in_bytes": 1760
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/dump_table",
+        "path_type": "hardlink",
+        "sha256": "aca937e72a91d5b504893f83735981b12ddb9747aa49d885e1eeeb8a15a9397c",
+        "sha256_in_prefix": "aca937e72a91d5b504893f83735981b12ddb9747aa49d885e1eeeb8a15a9397c",
+        "size_in_bytes": 182728
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/estimate_capacity",
+        "path_type": "hardlink",
+        "sha256": "11d9e96a17b639938481712f0ab2d74004ca89caad6db4cb48b8e4845ce1fe30",
+        "sha256_in_prefix": "11d9e96a17b639938481712f0ab2d74004ca89caad6db4cb48b8e4845ce1fe30",
+        "size_in_bytes": 49472
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/k2",
+        "path_type": "hardlink",
+        "sha256": "e78338c7eb1a9307fa45344470ffc7f3b73f6cfec0b0596e51c1fc19287c30f9",
+        "sha256_in_prefix": "e78338c7eb1a9307fa45344470ffc7f3b73f6cfec0b0596e51c1fc19287c30f9",
+        "size_in_bytes": 77187
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/k2mask",
+        "path_type": "hardlink",
+        "sha256": "2967d9699d897501a2aa6d4bdedd4cfdc35d8b93dc40b0ea3b5f92cf72ef088c",
+        "sha256_in_prefix": "2967d9699d897501a2aa6d4bdedd4cfdc35d8b93dc40b0ea3b5f92cf72ef088c",
+        "size_in_bytes": 103792
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/kraken2",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/kraken2_1717622234580/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "9bf0a0b03e42ae9b987c7626fd0a0732ac5bb8ce03329d576558ee0bc1248b92",
+        "sha256_in_prefix": "0b49e4f96c3e17fc7ee63558744b331bc680b57d64b0d21d78ddcd31257b872f",
+        "size_in_bytes": 8409
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/kraken2-build",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/kraken2_1717622234580/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "7b083312423217185c48b5978392fb5ee1a653715d2824429ed078c3ae2a0055",
+        "sha256_in_prefix": "e0bbca81e88174ce39a44532dd3e81e0c16d31a7260cc53512335f66049d4fd7",
+        "size_in_bytes": 11203
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/kraken2-inspect",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/kraken2_1717622234580/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "ad53681b070c41530625beb528602288a2f14d431a10d59e49d74c2a1d7c235e",
+        "sha256_in_prefix": "dff1067af770093c2a6b91bb55591c70dcbb6fe6fd2e3d16877057bd9596eb65",
+        "size_in_bytes": 2971
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/kraken2lib.pm",
+        "path_type": "hardlink",
+        "sha256": "2a752119a2d7d83ebe115afe4d0d167155da05494b21a3976273eaf0cec3bdfb",
+        "sha256_in_prefix": "2a752119a2d7d83ebe115afe4d0d167155da05494b21a3976273eaf0cec3bdfb",
+        "size_in_bytes": 2803
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/lookup_accession_numbers",
+        "path_type": "hardlink",
+        "sha256": "f6646bd81ecc60e3d51d5407723333d814ae55c40cd4e1c4fb76c868cf067976",
+        "sha256_in_prefix": "f6646bd81ecc60e3d51d5407723333d814ae55c40cd4e1c4fb76c868cf067976",
+        "size_in_bytes": 35464
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/lookup_accession_numbers.pl",
+        "path_type": "hardlink",
+        "sha256": "367181adc046e91086ad94ddcf346bee6145a09018ace587a13ad6d7d4e0a090",
+        "sha256_in_prefix": "367181adc046e91086ad94ddcf346bee6145a09018ace587a13ad6d7d4e0a090",
+        "size_in_bytes": 1780
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/make_seqid2taxid_map.pl",
+        "path_type": "hardlink",
+        "sha256": "c84cbeef0553971c7253343a9471c77474be6e953e284db781d8831feaafdb47",
+        "sha256_in_prefix": "c84cbeef0553971c7253343a9471c77474be6e953e284db781d8831feaafdb47",
+        "size_in_bytes": 3883
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/mask_low_complexity.sh",
+        "path_type": "hardlink",
+        "sha256": "80277974fa4fbe318e06d9c78c4f7224986e882af11ef2dd03e5b7398f985814",
+        "sha256_in_prefix": "80277974fa4fbe318e06d9c78c4f7224986e882af11ef2dd03e5b7398f985814",
+        "size_in_bytes": 1209
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/rsync_from_ncbi.pl",
+        "path_type": "hardlink",
+        "sha256": "6aa80c240d2a13a4de59fdeeea00d5cab542414d7360f8c9c35a8e3a7ce65f4f",
+        "sha256_in_prefix": "6aa80c240d2a13a4de59fdeeea00d5cab542414d7360f8c9c35a8e3a7ce65f4f",
+        "size_in_bytes": 6410
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/scan_fasta_file.pl",
+        "path_type": "hardlink",
+        "sha256": "ed2b0881fa84233753912b0b972fe4f42b9e61033d1149fbe0857b5b255ca507",
+        "sha256_in_prefix": "ed2b0881fa84233753912b0b972fe4f42b9e61033d1149fbe0857b5b255ca507",
+        "size_in_bytes": 1631
+      },
+      {
+        "_path": "share/kraken2-2.1.3-1/libexec/standard_installation.sh",
+        "path_type": "hardlink",
+        "sha256": "94f1125d15e7d1f2dbe97e75463010248a15ddf226848ac34a6e519944059ed3",
+        "sha256_in_prefix": "94f1125d15e7d1f2dbe97e75463010248a15ddf226848ac34a6e519944059ed3",
+        "size_in_bytes": 1596
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "kraken2=2.1.3",
+  "sha256": "1d5b087b222797df471761587badd5e646a5bd82f9dfe31b4e0eae2a41d7ba2b",
+  "size": 261878,
+  "subdir": "linux-64",
+  "timestamp": 1717622386000,
+  "url": "https://conda.anaconda.org/bioconda/linux-64/kraken2-2.1.3-pl5321hdcf5f25_1.tar.bz2",
+  "version": "2.1.3"
+}

@@ -126,12 +126,13 @@ process run_strainge {
     tuple val(sample_id), path(sample_hdf5)
     
     output:
-    tuple val(sample_id), path("${sample_id}.strainge.txt")
+    tuple val(sample_id), path("${sample_id}.stats.tsv")
+    tuple val(sample_id), path("${sample_id}.strains.tsv")
 
     script:
     """
         mkdir -p ${params.outdir}/${sample_id}
-        straingst run -o ${sample_id}.strainge.txt $baseDir/databases/pan-genome-db_99.hdf5 ${sample_hdf5}
+        straingst run -O -o ${sample_id} $baseDir/databases/pan-genome-db_99.hdf5 ${sample_hdf5}
     """
 }
 

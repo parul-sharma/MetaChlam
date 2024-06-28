@@ -1,0 +1,2 @@
+Sample,strain,gcov,LINgroup_Name,Assigned_reads,Strain_Name,Predicted_Depth (Enet)
+test,Chla_trachomatis_SQ20,3.552,A_Total_reads;B_NP-UA,9,GCF_001183765,2.3467387387387393

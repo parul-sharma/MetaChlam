@@ -1,0 +1,132 @@
+#!/workspaces/MetaChlam/work/conda/strainge_conda_env-6b7d15ae251354c1d471ff9b7274ac18/bin/python
+
+#  Copyright (c) 2016-2019, Broad Institute, Inc. All rights reserved.
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions are met:
+#
+#  * Redistributions of source code must retain the above copyright notice, this
+#    list of conditions and the following disclaimer.
+#
+#  * Redistributions in binary form must reproduce the above copyright notice,
+#    this list of conditions and the following disclaimer in the documentation
+#    and/or other materials provided with the distribution.
+#
+#  * Neither the name Broad Institute, Inc. nor the names of its
+#    contributors may be used to endorse or promote products derived from
+#    this software without specific prior written permission.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+#  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+#  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+#  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+#  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+#  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+#  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+#  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+#  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+#  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+import os
+import sys
+import urllib.request, urllib.parse, urllib.error
+import csv
+import time
+from subprocess import call
+
+def load_assemblies():
+    """fetch bacteria assembly_summary.txt file from NCBI refseq"""
+    summary = "assembly_summary.txt"
+    print("Fetching assembly file")
+    urllib.request.urlretrieve("ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/" + summary, summary)
+    with open(summary, 'r') as sum:
+        sum.readline()
+        assemblies =[row for row in csv.DictReader(sum, delimiter='\t')]
+    return assemblies
+
+def assembly_filter(ass, keywords):
+    """Do we want this assembly?"""
+    if (ass['version_status'] == "latest" and ass['assembly_level'] == 'Complete Genome') \
+        or ass['refseq_category'] == "reference genome":
+        name = ass['organism_name'].lower()
+        for k in keywords:
+            if name.startswith(k):
+                return True
+    return False
+
+def rsync_assembly(ass):
+    uri = ass['ftp_path'].replace("ftp:", "rsync:")
+    dirname = assembly_dir(ass)
+    if os.path.exists(os.path.join("ncbi", dirname)):
+        return
+    command = ["rsync", "-av", uri, "ncbi"]
+    print("Running", ' '.join(command))
+    call(command)
+    time.sleep(1)
+    return dirname
+
+def link_assembly(ass):
+    """Create a link to assembly using descriptive strain name"""
+    dirname = assembly_dir(ass)
+    source = os.path.join("ncbi", dirname, dirname + "_genomic.fna.gz")
+    print('Source:', source, 'Ass:', ass)
+    if os.path.exists(source):
+        dest = os.path.join("assemblies", assembly_name(ass) + ".fasta.gz")
+        if not os.path.exists("assemblies"):
+            os.mkdir("assemblies")
+        if not os.path.exists(dest):
+            print('Link from', source, 'to', dest)
+            os.symlink(os.path.join("..", source), dest)
+
+def assembly_dir(ass):
+    return ass['ftp_path'].split('/')[-1]
+
+assembly_names = set()
+
+def assembly_name(ass):
+    """Generate a name representing the name and suitable for use as a filename"""
+    org = ass['organism_name']
+    strain = ass['infraspecific_name']
+    isolate = ass['isolate']
+
+    org = org.replace("Escherichia", "E")
+    org = org.replace("Shigella", "S")
+    org = org.replace("Enterococcus", "En")
+    org = org.replace("Staphylococcus", "S")
+    strain = strain.replace("strain=", "")
+    name = org
+    if strain and name.find(strain) < 0:
+        name += "_" + strain
+    if isolate and name.find(isolate) < 0:
+        name += "_" + isolate
+    name = name.replace("subsp_", "")
+    name = name.replace(".", "")
+    name = name.replace("/", "-")
+    name = name.replace("(", "")
+    name = name.replace(")", "")
+    name = name.replace("'", "")
+    name = name.replace(";", "-")
+    name = name.replace(":", "-")
+    name = name.replace(" ", "_")
+    name = name.replace("__", "_")
+    name = name.replace("K-12_K-12", "K-12")
+    if name in assembly_names:
+        name += "_" + ass['# assembly_accession'].split('.')[0]
+    assembly_names.add(name)
+    # print (org, strain, isolate), name
+    return name
+
+###################################
+# MAIN
+###################################
+
+assemblies = load_assemblies()
+print(len(assemblies), "assemblies")
+keywords = [k.lower() for k in sys.argv[1:]]
+keepers = [assembly for assembly in assemblies if assembly_filter(assembly, keywords)]
+print(len(keepers), "keepers")
+#exit(0)
+for keeper in keepers:
+    rsync_assembly(keeper)
+    #link_assembly(keeper)

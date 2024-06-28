@@ -1,0 +1,552 @@
+{
+  "build": "py39hcaef8bb_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "bzip2 >=1.0.8,<2.0a0",
+    "h5py",
+    "intervaltree",
+    "libgcc-ng >=12",
+    "libstdcxx-ng >=12",
+    "libzlib >=1.2.12,<1.3.0a0",
+    "matplotlib-base",
+    "numpy >=1.19.5,<2.0a0",
+    "pybind11",
+    "pysam",
+    "python >=3.9,<3.10.0a0",
+    "python_abi 3.9.* *_cp39",
+    "scikit-bio >=0.5",
+    "scikit-learn >=0.24",
+    "scipy",
+    "zlib >=1.2.12,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/strainge-1.3.2-py39hcaef8bb_0",
+  "files": [
+    "bin/kmercoverage",
+    "bin/kmerseq",
+    "bin/kmersimilarity",
+    "bin/kmerspectrum",
+    "bin/kmertree",
+    "bin/pankmer",
+    "bin/refseq-download",
+    "bin/refseq-extract",
+    "bin/strainge",
+    "bin/straingr",
+    "bin/straingst",
+    "bin/treepath",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/LICENSE",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/METADATA",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/RECORD",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/WHEEL",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/entry_points.txt",
+    "lib/python3.9/site-packages/strainge-1.3.2.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/strainge/__init__.py",
+    "lib/python3.9/site-packages/strainge/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/_version.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/cluster.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/comparison.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/kmertools.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/sample_compare.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/search_tool.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/__pycache__/variant_caller.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/_version.py",
+    "lib/python3.9/site-packages/strainge/cli/__init__.py",
+    "lib/python3.9/site-packages/strainge/cli/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/cli/__pycache__/kmersets.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/cli/__pycache__/main.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/cli/__pycache__/registry.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/cli/__pycache__/straingr.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/cli/__pycache__/straingst.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/cli/kmersets.py",
+    "lib/python3.9/site-packages/strainge/cli/main.py",
+    "lib/python3.9/site-packages/strainge/cli/registry.py",
+    "lib/python3.9/site-packages/strainge/cli/straingr.py",
+    "lib/python3.9/site-packages/strainge/cli/straingst.py",
+    "lib/python3.9/site-packages/strainge/cluster.py",
+    "lib/python3.9/site-packages/strainge/comparison.py",
+    "lib/python3.9/site-packages/strainge/io/__init__.py",
+    "lib/python3.9/site-packages/strainge/io/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/io/__pycache__/comparisons.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/io/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/io/__pycache__/variants.cpython-39.pyc",
+    "lib/python3.9/site-packages/strainge/io/comparisons.py",
+    "lib/python3.9/site-packages/strainge/io/utils.py",
+    "lib/python3.9/site-packages/strainge/io/variants.py",
+    "lib/python3.9/site-packages/strainge/kmerizer.cpython-39-x86_64-linux-gnu.so",
+    "lib/python3.9/site-packages/strainge/kmertools.py",
+    "lib/python3.9/site-packages/strainge/sample_compare.py",
+    "lib/python3.9/site-packages/strainge/search_tool.py",
+    "lib/python3.9/site-packages/strainge/utils.py",
+    "lib/python3.9/site-packages/strainge/variant_caller.py"
+  ],
+  "fn": "strainge-1.3.2-py39hcaef8bb_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/opt/conda/pkgs/strainge-1.3.2-py39hcaef8bb_0",
+    "type": 1
+  },
+  "md5": "2c9bc1348ff9b8e2c563122a401b0a16",
+  "name": "strainge",
+  "package_tarball_full_path": "/opt/conda/pkgs/strainge-1.3.2-py39hcaef8bb_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/kmercoverage",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "ec70c33423b04c37b1e0f3b1ad2d8fd20f8377d131814036c09b59ac94206f36",
+        "sha256_in_prefix": "58314144499583146147ea43ceca6c5c21f2acd0a27bc0c3e47e3a07a27fba4a",
+        "size_in_bytes": 4324
+      },
+      {
+        "_path": "bin/kmerseq",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "31c54c143255481f5b4ca3759ab75d586f1bdf60f1374f629ccdbdf0c672cd89",
+        "sha256_in_prefix": "0e1f593fc931e435dd836bf7260d98bc7c6590f9169751459b0c0d1b51b69e14",
+        "size_in_bytes": 5058
+      },
+      {
+        "_path": "bin/kmersimilarity",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "c05e140c11f2aadb0a0492ad3414a77ae227a764ef79816b631ae1e5782e7aa3",
+        "sha256_in_prefix": "4f048c5a04061c5ee5f42a5d5079118408a79432f333dfca77d98deb1a952b69",
+        "size_in_bytes": 6909
+      },
+      {
+        "_path": "bin/kmerspectrum",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "d732f56614a0047abc69a3f907f29b04a025e15bf5f64b3eb4a270708b1bf5b5",
+        "sha256_in_prefix": "e0e1ebd40fa2e94f618879c6e17af1a202b549b6b263c9f3044d276feee58616",
+        "size_in_bytes": 4210
+      },
+      {
+        "_path": "bin/kmertree",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "b7c6a50ccd4b4bfe8c049357cdfa661db52e4297bd8174752295742d9cf543ad",
+        "sha256_in_prefix": "3c3aa332c8b6288dea4fe03b8f39a7064a1a7d6ef24dab61e15ce3c6b14621df",
+        "size_in_bytes": 15338
+      },
+      {
+        "_path": "bin/pankmer",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "db4166244a72b5ea62d3f077370e81abd443dc64275582b0342373ed6235aeab",
+        "sha256_in_prefix": "8a4a1696d03a46fb70c93fb1ae1f271b47b330d4408077e007fbdf8057b082bf",
+        "size_in_bytes": 3220
+      },
+      {
+        "_path": "bin/refseq-download",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "c5e041631e31a06af983361542a052cfeffcb7e9bcc04ff5834c6e88aba99691",
+        "sha256_in_prefix": "18ea4a4716fefa7c17346e725f064d20b9e56969d994c9d924d79f2689a9e185",
+        "size_in_bytes": 5283
+      },
+      {
+        "_path": "bin/refseq-extract",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "45fd635623cea8b27f04f4241ffa73941bb566ba648e2e1b9353e381b0cfff2c",
+        "sha256_in_prefix": "cfa159f6f86312d1f416db74c86b67040c73d484a3b58cd4b4e6df4e22ae6107",
+        "size_in_bytes": 4769
+      },
+      {
+        "_path": "bin/strainge",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "2e81ce096634674ab8703b9e06115d64aeb4b5af1424a6a6b6db3c829df0a652",
+        "sha256_in_prefix": "fc0cf2273ce4e34e98fc654fc4c45434f4f4cc05bbbd971405cc8ee4bf3c225d",
+        "size_in_bytes": 486
+      },
+      {
+        "_path": "bin/straingr",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "fe3c84426ce713b960fb93d3f672c41227fc238083e362b32205b36065f18685",
+        "sha256_in_prefix": "74775aa04e8f0aaf04f1b92be39a9f8d086e2d0b8b747f71e1b8e6c4d6f2ccdc",
+        "size_in_bytes": 486
+      },
+      {
+        "_path": "bin/straingst",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "612cdc4df39e398666fce4f8735ceb15f54709194d274366daf7c2638eff8f2d",
+        "sha256_in_prefix": "d626d159544e5f41d7961a3eec5c3f05919e25465220b281c355fbc16317b795",
+        "size_in_bytes": 488
+      },
+      {
+        "_path": "bin/treepath",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/strainge_1654337163034/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "4e93966f2308c89e31e8b53f7fe474596092c1279ac2be6155872b858a6ed020",
+        "sha256_in_prefix": "25e2bebd8122d40cbace10f40ebebbef998a86f01d06dc73950cded600042e69",
+        "size_in_bytes": 32634
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "88ba7cfb24125e45073b0cb31bab9d3bf5935e6967eb3c58bfab53154c07328c",
+        "sha256_in_prefix": "88ba7cfb24125e45073b0cb31bab9d3bf5935e6967eb3c58bfab53154c07328c",
+        "size_in_bytes": 1502
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "271d08d1036374f9391174b09cb507b935a97c20faec80667c668abccef008fe",
+        "sha256_in_prefix": "271d08d1036374f9391174b09cb507b935a97c20faec80667c668abccef008fe",
+        "size_in_bytes": 3115
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "6b9e5b6ce03872e9d38f99615197c8eee4f74669428f48f5e398590cef1bee2b",
+        "sha256_in_prefix": "6b9e5b6ce03872e9d38f99615197c8eee4f74669428f48f5e398590cef1bee2b",
+        "size_in_bytes": 4343
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "fd3cea8db975b7fda98fd81f64fbc6d69a72bda3b2a3151ad39de77e1e34ac4f",
+        "sha256_in_prefix": "fd3cea8db975b7fda98fd81f64fbc6d69a72bda3b2a3151ad39de77e1e34ac4f",
+        "size_in_bytes": 103
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "2c623831b9bbbdfa1746d814f85dcb0f2509f02268c01893d2640f1d666c01cc",
+        "sha256_in_prefix": "2c623831b9bbbdfa1746d814f85dcb0f2509f02268c01893d2640f1d666c01cc",
+        "size_in_bytes": 82
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "5501822e3e035e64bcaac9b0ae0dc630ec8fd6bf2567e7b0ad21c1d68f7d4d43",
+        "sha256_in_prefix": "5501822e3e035e64bcaac9b0ae0dc630ec8fd6bf2567e7b0ad21c1d68f7d4d43",
+        "size_in_bytes": 146
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge-1.3.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "c83936b7a6b147436f7b2c667b3d8f3b75e16adc0224ff674c5c578a6861883d",
+        "sha256_in_prefix": "c83936b7a6b147436f7b2c667b3d8f3b75e16adc0224ff674c5c578a6861883d",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4870597bb453cf65ba7f257fc0237f4a7ee11b3d4a934381a86ce166d1b6df4e",
+        "sha256_in_prefix": "4870597bb453cf65ba7f257fc0237f4a7ee11b3d4a934381a86ce166d1b6df4e",
+        "size_in_bytes": 1916
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5f040e6be307839965e2c5f7ee0aea06f9b257a93e26c68b03e512a6b60d0852",
+        "sha256_in_prefix": "5f040e6be307839965e2c5f7ee0aea06f9b257a93e26c68b03e512a6b60d0852",
+        "size_in_bytes": 479
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/_version.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "890b653a6dbf923e625f256370dbfbb52cd2a052c8b7f958400fc69c968e979d",
+        "sha256_in_prefix": "890b653a6dbf923e625f256370dbfbb52cd2a052c8b7f958400fc69c968e979d",
+        "size_in_bytes": 463
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/cluster.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "925159f31d4ce1657879b868153905996d50d7b317663047d6a86389d79c7956",
+        "sha256_in_prefix": "925159f31d4ce1657879b868153905996d50d7b317663047d6a86389d79c7956",
+        "size_in_bytes": 3009
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/comparison.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d3f2aea4e5da31adf7f72ea0a92bbbfbc53c3cd1925f4ab30b556577700e65be",
+        "sha256_in_prefix": "d3f2aea4e5da31adf7f72ea0a92bbbfbc53c3cd1925f4ab30b556577700e65be",
+        "size_in_bytes": 2433
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/kmertools.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f67dd064ea9f1a09796399656cdf32b0198496af24e302cd529195a39d9894e2",
+        "sha256_in_prefix": "f67dd064ea9f1a09796399656cdf32b0198496af24e302cd529195a39d9894e2",
+        "size_in_bytes": 15598
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/sample_compare.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "52e725c1695d79f393a382dce7dfb9b03280608df42b0ba2b3eb9f9ef0ec144e",
+        "sha256_in_prefix": "52e725c1695d79f393a382dce7dfb9b03280608df42b0ba2b3eb9f9ef0ec144e",
+        "size_in_bytes": 6400
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/search_tool.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "307a164fa8556c11d5736fda1b5df46f492ed1fca526afa256077ab4652e1e09",
+        "sha256_in_prefix": "307a164fa8556c11d5736fda1b5df46f492ed1fca526afa256077ab4652e1e09",
+        "size_in_bytes": 10507
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6e03beb3fda5e1701de4d2b7dde844d82aadcb384f9694a3d6e0daabae9f2c9e",
+        "sha256_in_prefix": "6e03beb3fda5e1701de4d2b7dde844d82aadcb384f9694a3d6e0daabae9f2c9e",
+        "size_in_bytes": 2673
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/__pycache__/variant_caller.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a311401abbf256635cc6a405b478b043ef39c8c9a4a41c47ead286f311ec64a4",
+        "sha256_in_prefix": "a311401abbf256635cc6a405b478b043ef39c8c9a4a41c47ead286f311ec64a4",
+        "size_in_bytes": 30017
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/_version.py",
+        "path_type": "hardlink",
+        "sha256": "bb5d51481d4d31f264188a356cfc9995039b8ebbe109dab3de36907c9b6184da",
+        "sha256_in_prefix": "bb5d51481d4d31f264188a356cfc9995039b8ebbe109dab3de36907c9b6184da",
+        "size_in_bytes": 497
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "53d55e33efe8905e2aee2f2ca3b140ccc67207c802b5dbf8908056a53e5424ad",
+        "sha256_in_prefix": "53d55e33efe8905e2aee2f2ca3b140ccc67207c802b5dbf8908056a53e5424ad",
+        "size_in_bytes": 1575
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6ae84bb9d9dc7d29c43cef08d2a19f35fa847332a6dcdc31279a73054d4e5527",
+        "sha256_in_prefix": "6ae84bb9d9dc7d29c43cef08d2a19f35fa847332a6dcdc31279a73054d4e5527",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/__pycache__/kmersets.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bb73d5f9dbc5ba45ef4f20ad849924d362311cbfc3238c7810f91305aef78b65",
+        "sha256_in_prefix": "bb73d5f9dbc5ba45ef4f20ad849924d362311cbfc3238c7810f91305aef78b65",
+        "size_in_bytes": 17747
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/__pycache__/main.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "583c8d4a2774d897ca6660975670a5b898134fd66202321f82f0879c45d654c0",
+        "sha256_in_prefix": "583c8d4a2774d897ca6660975670a5b898134fd66202321f82f0879c45d654c0",
+        "size_in_bytes": 3333
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/__pycache__/registry.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "619f2b13ba611f1038af8f716fb441d0e7d1be9aa063679dd08255d4011ba08f",
+        "sha256_in_prefix": "619f2b13ba611f1038af8f716fb441d0e7d1be9aa063679dd08255d4011ba08f",
+        "size_in_bytes": 2437
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/__pycache__/straingr.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "45e147ad813efc726967bfd92ef4d152844c811ea872447defd972821696e772",
+        "sha256_in_prefix": "45e147ad813efc726967bfd92ef4d152844c811ea872447defd972821696e772",
+        "size_in_bytes": 28660
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/__pycache__/straingst.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "eab9d19e16b2153109a4ad91f4f5a9409626c41e4010316a0e7533be731af689",
+        "sha256_in_prefix": "eab9d19e16b2153109a4ad91f4f5a9409626c41e4010316a0e7533be731af689",
+        "size_in_bytes": 5857
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/kmersets.py",
+        "path_type": "hardlink",
+        "sha256": "c21c99c9d271fd287f5b5f7d0e5decbcb60b71198c52a385ae8d1f6744ab1f45",
+        "sha256_in_prefix": "c21c99c9d271fd287f5b5f7d0e5decbcb60b71198c52a385ae8d1f6744ab1f45",
+        "size_in_bytes": 23844
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/main.py",
+        "path_type": "hardlink",
+        "sha256": "afd546c6844bc221e9acfcf875d46cc2da83e50ba4c4a1af03e4c651bbd237ac",
+        "sha256_in_prefix": "afd546c6844bc221e9acfcf875d46cc2da83e50ba4c4a1af03e4c651bbd237ac",
+        "size_in_bytes": 6455
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/registry.py",
+        "path_type": "hardlink",
+        "sha256": "8aa77cfb5a567525451ff9defdcded0cc94199dee97ea8bf6028c00d4f969697",
+        "sha256_in_prefix": "8aa77cfb5a567525451ff9defdcded0cc94199dee97ea8bf6028c00d4f969697",
+        "size_in_bytes": 3726
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/straingr.py",
+        "path_type": "hardlink",
+        "sha256": "b258bcde28294f8668bcc43de63e0d8af174ef37d2e7ce9f971ae06d1490ade2",
+        "sha256_in_prefix": "b258bcde28294f8668bcc43de63e0d8af174ef37d2e7ce9f971ae06d1490ade2",
+        "size_in_bytes": 39098
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cli/straingst.py",
+        "path_type": "hardlink",
+        "sha256": "9fe84b704550a737a4721c3a9226783268d235bdfbefece38442ec191ee9fbe3",
+        "sha256_in_prefix": "9fe84b704550a737a4721c3a9226783268d235bdfbefece38442ec191ee9fbe3",
+        "size_in_bytes": 8846
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/cluster.py",
+        "path_type": "hardlink",
+        "sha256": "59e23f250d1950eae024a6fcbb7276f66da14829690f366dc0b1c2f578830bbf",
+        "sha256_in_prefix": "59e23f250d1950eae024a6fcbb7276f66da14829690f366dc0b1c2f578830bbf",
+        "size_in_bytes": 5717
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/comparison.py",
+        "path_type": "hardlink",
+        "sha256": "260443c2a7e15b7fe94c15696137ad8dbdc170d523fb1f157b28348f9645785e",
+        "sha256_in_prefix": "260443c2a7e15b7fe94c15696137ad8dbdc170d523fb1f157b28348f9645785e",
+        "size_in_bytes": 3786
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "799ab99fe6b5583b44d8da1ea45a90b5cc63cee5a5101d0b4c542008853dccf9",
+        "sha256_in_prefix": "799ab99fe6b5583b44d8da1ea45a90b5cc63cee5a5101d0b4c542008853dccf9",
+        "size_in_bytes": 1576
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "53029bdefb0fc7c9df9d6d327c72a22c305d9ca9a971d9ee8b50809c7454d4a2",
+        "sha256_in_prefix": "53029bdefb0fc7c9df9d6d327c72a22c305d9ca9a971d9ee8b50809c7454d4a2",
+        "size_in_bytes": 142
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/__pycache__/comparisons.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "433f133e2590de05e9b154ba63d2bd8115b514212848729cad244ff8bf8276e7",
+        "sha256_in_prefix": "433f133e2590de05e9b154ba63d2bd8115b514212848729cad244ff8bf8276e7",
+        "size_in_bytes": 3239
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/__pycache__/utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "80b2f4f0b40437bc60386d6380c9acc9ff1ae8833c8106f2421d67461ca49e70",
+        "sha256_in_prefix": "80b2f4f0b40437bc60386d6380c9acc9ff1ae8833c8106f2421d67461ca49e70",
+        "size_in_bytes": 2100
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/__pycache__/variants.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "20bcbe72efdad7dbf070a28b55f0a1c4aeb354ea73f45794c6ea14623420eea3",
+        "sha256_in_prefix": "20bcbe72efdad7dbf070a28b55f0a1c4aeb354ea73f45794c6ea14623420eea3",
+        "size_in_bytes": 11927
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/comparisons.py",
+        "path_type": "hardlink",
+        "sha256": "7020bf22213dd7dd72aa0594298ecce3d5ca9871c22cacefdab59fc76f22cd6d",
+        "sha256_in_prefix": "7020bf22213dd7dd72aa0594298ecce3d5ca9871c22cacefdab59fc76f22cd6d",
+        "size_in_bytes": 4813
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/utils.py",
+        "path_type": "hardlink",
+        "sha256": "d4ec7d11d54644dd6f10c484a3d7deaa0ae1a88e5a5c001dba5ddfa08ec3aa52",
+        "sha256_in_prefix": "d4ec7d11d54644dd6f10c484a3d7deaa0ae1a88e5a5c001dba5ddfa08ec3aa52",
+        "size_in_bytes": 4723
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/io/variants.py",
+        "path_type": "hardlink",
+        "sha256": "e968a7e865915520a6838548f04d0c079cea44145ae360ddb7539843a93a6e11",
+        "sha256_in_prefix": "e968a7e865915520a6838548f04d0c079cea44145ae360ddb7539843a93a6e11",
+        "size_in_bytes": 17581
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/kmerizer.cpython-39-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "d472ac246d7f0f53c19972b8cfd0f2c7e7dda8a3ad2676d939edb21ca3dbfc8a",
+        "sha256_in_prefix": "d472ac246d7f0f53c19972b8cfd0f2c7e7dda8a3ad2676d939edb21ca3dbfc8a",
+        "size_in_bytes": 287040
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/kmertools.py",
+        "path_type": "hardlink",
+        "sha256": "9f9cf0f42f699b63077b74e7a514e4423efb3053b392f80125e309532f4d2174",
+        "sha256_in_prefix": "9f9cf0f42f699b63077b74e7a514e4423efb3053b392f80125e309532f4d2174",
+        "size_in_bytes": 20003
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/sample_compare.py",
+        "path_type": "hardlink",
+        "sha256": "8bbde6908137152aa1aa42a0515b7d73b40fe4c50253f927bf4facffacefa7bb",
+        "sha256_in_prefix": "8bbde6908137152aa1aa42a0515b7d73b40fe4c50253f927bf4facffacefa7bb",
+        "size_in_bytes": 10262
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/search_tool.py",
+        "path_type": "hardlink",
+        "sha256": "5cc7aa29c5551b64ecb38ccfadc297742206e34c72ba9e82749ba8af581d0e43",
+        "sha256_in_prefix": "5cc7aa29c5551b64ecb38ccfadc297742206e34c72ba9e82749ba8af581d0e43",
+        "size_in_bytes": 17400
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/utils.py",
+        "path_type": "hardlink",
+        "sha256": "a1294bb3fb4896d30fccb4214acea24eed056663ff09b7eae752ce752c336609",
+        "sha256_in_prefix": "a1294bb3fb4896d30fccb4214acea24eed056663ff09b7eae752ce752c336609",
+        "size_in_bytes": 4256
+      },
+      {
+        "_path": "lib/python3.9/site-packages/strainge/variant_caller.py",
+        "path_type": "hardlink",
+        "sha256": "3edd3ad2e80a6f5d723de12344ca492f3ccc60b7deee2df51547daa843c0aa06",
+        "sha256_in_prefix": "3edd3ad2e80a6f5d723de12344ca492f3ccc60b7deee2df51547daa843c0aa06",
+        "size_in_bytes": 40641
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "strainge=1.3.2",
+  "sha256": "12256924c03b2043c71ae72a8ed078f1c56b2fe4a4f34451004f1431f7d4ffa5",
+  "size": 220594,
+  "subdir": "linux-64",
+  "timestamp": 1654337576000,
+  "url": "https://conda.anaconda.org/bioconda/linux-64/strainge-1.3.2-py39hcaef8bb_0.tar.bz2",
+  "version": "1.3.2"
+}

@@ -1,0 +1,51 @@
+{
+  "build": "h56ed46c_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=10.3.0",
+    "libstdcxx-ng >=10.3.0",
+    "tbb >=2020.2,<2021.0.0a0"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/twopaco-0.9.4-h56ed46c_2",
+  "files": [
+    "bin/graphdump",
+    "bin/twopaco"
+  ],
+  "fn": "twopaco-0.9.4-h56ed46c_2.tar.bz2",
+  "license": "Custom OSS",
+  "link": {
+    "source": "/opt/conda/pkgs/twopaco-0.9.4-h56ed46c_2",
+    "type": 1
+  },
+  "md5": "197a526d149d20b0a181e31b586e4b73",
+  "name": "twopaco",
+  "package_tarball_full_path": "/opt/conda/pkgs/twopaco-0.9.4-h56ed46c_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/graphdump",
+        "path_type": "hardlink",
+        "sha256": "c49b4537b0eaa2a59dd605354e6b2307f140b6b1ccdefd1a860b70401606d443",
+        "sha256_in_prefix": "c49b4537b0eaa2a59dd605354e6b2307f140b6b1ccdefd1a860b70401606d443",
+        "size_in_bytes": 229616
+      },
+      {
+        "_path": "bin/twopaco",
+        "path_type": "hardlink",
+        "sha256": "c1a35862dd8fa6678d682b3f2f85e168f4597d8ceb7c66693db85513f12665fc",
+        "sha256_in_prefix": "c1a35862dd8fa6678d682b3f2f85e168f4597d8ceb7c66693db85513f12665fc",
+        "size_in_bytes": 1486848
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "b65c93fde156867350f3ee3d0153cef60da3a15d3a0ef814792a08c763a352c5",
+  "size": 416189,
+  "subdir": "linux-64",
+  "timestamp": 1645513153000,
+  "url": "https://conda.anaconda.org/bioconda/linux-64/twopaco-0.9.4-h56ed46c_2.tar.bz2",
+  "version": "0.9.4"
+}

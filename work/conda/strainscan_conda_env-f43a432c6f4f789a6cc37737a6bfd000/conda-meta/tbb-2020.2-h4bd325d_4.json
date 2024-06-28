@@ -1,0 +1,62 @@
+{
+  "build": "h4bd325d_4",
+  "build_number": 4,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=9.3.0",
+    "libstdcxx-ng >=9.3.0"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/tbb-2020.2-h4bd325d_4",
+  "files": [
+    "lib/libtbb.so.2",
+    "lib/libtbbmalloc.so.2",
+    "lib/libtbbmalloc_proxy.so.2"
+  ],
+  "fn": "tbb-2020.2-h4bd325d_4.tar.bz2",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/opt/conda/pkgs/tbb-2020.2-h4bd325d_4",
+    "type": 1
+  },
+  "md5": "850df84d9b8261b73102a8fce99f820f",
+  "name": "tbb",
+  "package_tarball_full_path": "/opt/conda/pkgs/tbb-2020.2-h4bd325d_4.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libtbb.so.2",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/tbb_1614802580990/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "f4130dd39310dc5e28a6baa6c3093c4dc6ce0c60aa7c4aa13326d5f14e75f095",
+        "sha256_in_prefix": "f4130dd39310dc5e28a6baa6c3093c4dc6ce0c60aa7c4aa13326d5f14e75f095",
+        "size_in_bytes": 3358320
+      },
+      {
+        "_path": "lib/libtbbmalloc.so.2",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/tbb_1614802580990/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "194739cd4cd39bc3ebbd5697ccb1297403e4aba083785caf6b099584f501261c",
+        "sha256_in_prefix": "194739cd4cd39bc3ebbd5697ccb1297403e4aba083785caf6b099584f501261c",
+        "size_in_bytes": 1007632
+      },
+      {
+        "_path": "lib/libtbbmalloc_proxy.so.2",
+        "path_type": "hardlink",
+        "sha256": "f4f060f15e2ec646276a3492e290d4b758c16960fea07db25e639176bbad377c",
+        "sha256_in_prefix": "f4f060f15e2ec646276a3492e290d4b758c16960fea07db25e639176bbad377c",
+        "size_in_bytes": 140792
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "bb38027032c03b8d4718e3977115246ce24c5c63e76aebfed42bca1ff5893195",
+  "size": 1530039,
+  "subdir": "linux-64",
+  "timestamp": 1614802982000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/tbb-2020.2-h4bd325d_4.tar.bz2",
+  "version": "2020.2"
+}
