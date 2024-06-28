@@ -170,7 +170,7 @@ process run_sourmash {
     script:
     """
         mkdir -p ${params.outdir}/${sample_id}
-        sourmash gather ${sample_sig} $baseDir/databases/sourmash_db.zip > ${sample_id}.gather
+        sourmash gather ${sample_sig} $baseDir/databases/sourmash_db.sbt.zip > ${sample_id}.gather
     """
 }
 
