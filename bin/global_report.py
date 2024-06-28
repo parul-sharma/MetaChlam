@@ -17,29 +17,21 @@ def extract_strainge(file):
 # Function to extract relevant data from LIN report
 def extract_linreport(file):
     linreport_df = pd.read_csv(file, sep=',')
-    linreport_filtered = linreport_df[linreport_df['Assigned_reads'] != 0]
+    linreport_filtered = linreport_df[linreport_df['Percentage_assigned_reads'] != 0]
     linreport_data = linreport_filtered.loc[:, ['LINgroup_Name', 'Assigned_reads']]
     return linreport_data
 
 # Function to extract relevant data from sourmash output
 def extract_sourmash(file):
-    sourmash_data = pd.DataFrame(columns=['strain', 'p_query'])  # Initialize an empty DataFrame
-    try:
-        with open(file) as f:
-            lines = f.readlines()
-            # Skip empty lines and lines that start with spaces or tabs until data is found
-            for line in lines:
-                line = line.strip()
-                if line and not line.startswith(' ') and not line.startswith('\t'):
-                    break
-            if lines:
-                strain = lines[-1].split()[-1]  # Extract strain name
-                p_query = float(lines[-2].split()[0])  # Extract p_query value
-                sourmash_data = pd.DataFrame({'strain': [strain], 'p_query': [p_query]})
-    except FileNotFoundError:
-        print(f"Error: File '{file}' not found.")
-    except Exception as e:
-        print(f"Error reading '{file}': {str(e)}")
+    with open(file) as f:
+        lines = f.readlines()
+    # Clean up the lines by removing empty lines and stripping leading/trailing whitespace
+    lines = [line.strip() for line in lines if line.strip()]
+    print(lines)
+    # Extract strain and p_query from the relevant lines
+    strain = lines[3].split()[-1]  # Extract strain name from the fourth line
+    p_query = float(lines[4].split()[0])  # Extract p_query value from the fifth line
+    sourmash_data = pd.DataFrame({'strain': [strain], 'p_query': [p_query]})
     return sourmash_data
 
 # Function to extract relevant data from strainscan output
