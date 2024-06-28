@@ -56,3 +56,6 @@
 2024-06-28 16:06:45	-	soggy_angela	-	6fdb03e92f36d6e7b0a59c89521a0214	91d72269-6585-4b9a-b5fe-f15cfcd3e485	nextflow run main.nf -resume
 2024-06-28 16:07:13	-	nostalgic_darwin	-	496aa8436b133fe18f3cfe051c65e4a2	91d72269-6585-4b9a-b5fe-f15cfcd3e485	nextflow run main.nf -resume
 2024-06-28 16:08:46	-	zen_fermi	-	aad60617f8c29a0a9f836f43af54b524	91d72269-6585-4b9a-b5fe-f15cfcd3e485	nextflow run main.nf -resume
+2024-06-28 18:07:33	-	cranky_turing	-	189eae0bb397896e8808a59758abac48	91d72269-6585-4b9a-b5fe-f15cfcd3e485	nextflow run main.nf -resume
+2024-06-28 18:09:51	-	cheeky_khorana	-	f154b0c83a950e7cc9dce8825ba39782	91d72269-6585-4b9a-b5fe-f15cfcd3e485	nextflow run main.nf -resume
+2024-06-28 18:15:40	8.8s	shrivelled_meitner	OK	dffaf66920e9da124bba01afd0c47be7	91d72269-6585-4b9a-b5fe-f15cfcd3e485	nextflow run main.nf -resume

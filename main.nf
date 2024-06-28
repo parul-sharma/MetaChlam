@@ -175,7 +175,7 @@ process run_sourmash {
 }
 
 process run_global_report {
-    publishDir "${params.outdir}", mode: 'copy'
+    publishDir "${params.outdir}/${sample_id}", mode: 'copy'
     
     input: 
     tuple val(sample_id), path(strainscan_out)
@@ -188,7 +188,10 @@ process run_global_report {
 
     script:
     """
-        python $baseDir/bin/global_report.py -i ${params.outdir}/${sample_id} -s ${sample_sig} -o ${sample_id}_summary.csv
+        python $baseDir/bin/global_report.py -st ${strainge_out} \
+        -lr ${lintax_out} -sc ${strainscan_out} \
+        -sm ${sourmash_out} -s ${sample_id} \
+        -o ${sample_id}_summary.csv
     """
 }
 
@@ -196,10 +199,10 @@ process combine_summaries {
     publishDir "${params.outdir}", mode: 'copy'
 
     input:
-    path(sample_summary.collect())
+    path "*_summary.csv"
 
     output:
-    path("final_summary.csv")
+    path("Combined_summary.csv")
 
     script:
     """
@@ -209,7 +212,7 @@ import glob
 
 summary_files = glob.glob('*_summary.csv')
 combined_df = pd.concat([pd.read_csv(f) for f in summary_files], ignore_index=True)
-combined_df.to_csv('final_summary.csv', index=False)
+combined_df.to_csv('Combined_summary.csv', index=False)
         "
     """
 }
@@ -224,6 +227,6 @@ workflow {
     strainge_out_ch = run_strainge(strainge_kmer_out_ch.sample_hdf5)
     sourmash_kmer_out_ch = run_sourmash_kmerize_sample(reads)
     sourmash_out_ch = run_sourmash(sourmash_kmer_out_ch.sample_sig)
-    sample_summary_ch = run_global_report(strainscan_out_ch, strainge_out_ch, lintax_out_ch, sourmash_out_ch)
-    combine_summaries(sample_summary_ch)
+    sample_summary_ch = run_global_report(strainscan_out_ch.strainscan_out, strainge_out_ch.strainge_out, lintax_out_ch.lintax_out, sourmash_out_ch.sourmash_out) | collect | combine_summaries
+   
 }
