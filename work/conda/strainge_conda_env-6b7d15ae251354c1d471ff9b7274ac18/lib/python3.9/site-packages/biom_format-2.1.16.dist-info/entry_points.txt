@@ -1,0 +1,2 @@
+[console_scripts]
+biom = biom.cli:cli

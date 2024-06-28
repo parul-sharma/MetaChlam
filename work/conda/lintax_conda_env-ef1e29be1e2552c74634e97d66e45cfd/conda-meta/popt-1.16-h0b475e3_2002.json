@@ -1,0 +1,350 @@
+{
+  "build": "h0b475e3_2002",
+  "build_number": 2002,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.5.0",
+    "libiconv"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/popt-1.16-h0b475e3_2002",
+  "files": [
+    "include/popt.h",
+    "lib/libpopt.a",
+    "lib/libpopt.so",
+    "lib/libpopt.so.0",
+    "lib/libpopt.so.0.0.0",
+    "lib/pkgconfig/popt.pc",
+    "share/locale/cs/LC_MESSAGES/popt.mo",
+    "share/locale/da/LC_MESSAGES/popt.mo",
+    "share/locale/de/LC_MESSAGES/popt.mo",
+    "share/locale/eo/LC_MESSAGES/popt.mo",
+    "share/locale/es/LC_MESSAGES/popt.mo",
+    "share/locale/fi/LC_MESSAGES/popt.mo",
+    "share/locale/fr/LC_MESSAGES/popt.mo",
+    "share/locale/ga/LC_MESSAGES/popt.mo",
+    "share/locale/gl/LC_MESSAGES/popt.mo",
+    "share/locale/hu/LC_MESSAGES/popt.mo",
+    "share/locale/id/LC_MESSAGES/popt.mo",
+    "share/locale/is/LC_MESSAGES/popt.mo",
+    "share/locale/it/LC_MESSAGES/popt.mo",
+    "share/locale/ja/LC_MESSAGES/popt.mo",
+    "share/locale/ko/LC_MESSAGES/popt.mo",
+    "share/locale/lv/LC_MESSAGES/popt.mo",
+    "share/locale/nb/LC_MESSAGES/popt.mo",
+    "share/locale/nl/LC_MESSAGES/popt.mo",
+    "share/locale/pl/LC_MESSAGES/popt.mo",
+    "share/locale/pt/LC_MESSAGES/popt.mo",
+    "share/locale/ro/LC_MESSAGES/popt.mo",
+    "share/locale/ru/LC_MESSAGES/popt.mo",
+    "share/locale/sk/LC_MESSAGES/popt.mo",
+    "share/locale/sl/LC_MESSAGES/popt.mo",
+    "share/locale/sv/LC_MESSAGES/popt.mo",
+    "share/locale/th/LC_MESSAGES/popt.mo",
+    "share/locale/tr/LC_MESSAGES/popt.mo",
+    "share/locale/uk/LC_MESSAGES/popt.mo",
+    "share/locale/vi/LC_MESSAGES/popt.mo",
+    "share/locale/wa/LC_MESSAGES/popt.mo",
+    "share/locale/zh_CN/LC_MESSAGES/popt.mo",
+    "share/locale/zh_TW/LC_MESSAGES/popt.mo",
+    "share/man/man3/popt.3"
+  ],
+  "fn": "popt-1.16-h0b475e3_2002.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/opt/conda/pkgs/popt-1.16-h0b475e3_2002",
+    "type": 1
+  },
+  "md5": "78388f97473c02e5ac8a3742eee4c959",
+  "name": "popt",
+  "package_tarball_full_path": "/opt/conda/pkgs/popt-1.16-h0b475e3_2002.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/popt.h",
+        "path_type": "hardlink",
+        "sha256": "f82e44e12b23e7d2365932dc52a68066c6705bb53ba7828eeb5136b30d31e837",
+        "sha256_in_prefix": "f82e44e12b23e7d2365932dc52a68066c6705bb53ba7828eeb5136b30d31e837",
+        "size_in_bytes": 22621
+      },
+      {
+        "_path": "lib/libpopt.a",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/popt_1607330173623/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "2798d56927dbcf0d0f554348564572366c40b60e7d4252a4eebb86c793655cd5",
+        "sha256_in_prefix": "4d1257a8ff2c010614611a3d66513e09772a1807f124cc9c3776f4c92c9c04bf",
+        "size_in_bytes": 89280
+      },
+      {
+        "_path": "lib/libpopt.so",
+        "path_type": "softlink",
+        "sha256": "70cacd71110036d8ec13696bb1ce52b40f07550f291441d2fe2834ce46101fca",
+        "size_in_bytes": 63744
+      },
+      {
+        "_path": "lib/libpopt.so.0",
+        "path_type": "softlink",
+        "sha256": "70cacd71110036d8ec13696bb1ce52b40f07550f291441d2fe2834ce46101fca",
+        "size_in_bytes": 63744
+      },
+      {
+        "_path": "lib/libpopt.so.0.0.0",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/popt_1607330173623/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "70cacd71110036d8ec13696bb1ce52b40f07550f291441d2fe2834ce46101fca",
+        "sha256_in_prefix": "5b3b111faeefba422bdbbf8c681a1f56960debd5c64affe3f90b86550c1fdc61",
+        "size_in_bytes": 63744
+      },
+      {
+        "_path": "lib/pkgconfig/popt.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/popt_1607330173623/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "0072f9044519e3fec17dce0a48ec85fd0876b85084a10e7299784a2bc7b0adcd",
+        "sha256_in_prefix": "a42bd0ae69d58fb29ee95d91d2a2eb7d40c9094e5629d239a41ae09ffb714726",
+        "size_in_bytes": 442
+      },
+      {
+        "_path": "share/locale/cs/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "be009369026bd24a9c54e1f6fcf3cc684f8fba401ac46d407635fda1fc209a72",
+        "sha256_in_prefix": "be009369026bd24a9c54e1f6fcf3cc684f8fba401ac46d407635fda1fc209a72",
+        "size_in_bytes": 2184
+      },
+      {
+        "_path": "share/locale/da/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "06bd2a389b3373b9d47dde451a1499d3fd24e617d84bc20c7c00842213b6d097",
+        "sha256_in_prefix": "06bd2a389b3373b9d47dde451a1499d3fd24e617d84bc20c7c00842213b6d097",
+        "size_in_bytes": 2143
+      },
+      {
+        "_path": "share/locale/de/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "1bd7b55a8813a2916aade245bda25525470a4833bb428feba452375a8e0d7d3d",
+        "sha256_in_prefix": "1bd7b55a8813a2916aade245bda25525470a4833bb428feba452375a8e0d7d3d",
+        "size_in_bytes": 2200
+      },
+      {
+        "_path": "share/locale/eo/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "c6da6aca5c81de878e4c07a0fddaab32da9e3d53c034722ba5b61f86a993f384",
+        "sha256_in_prefix": "c6da6aca5c81de878e4c07a0fddaab32da9e3d53c034722ba5b61f86a993f384",
+        "size_in_bytes": 2175
+      },
+      {
+        "_path": "share/locale/es/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "34941e62bc6fc8af9a538353a7e15a2579e2da9b5cb8e6aff2085b7688624cd1",
+        "sha256_in_prefix": "34941e62bc6fc8af9a538353a7e15a2579e2da9b5cb8e6aff2085b7688624cd1",
+        "size_in_bytes": 1537
+      },
+      {
+        "_path": "share/locale/fi/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "17f47abc1885a33b83613b0fff0c157b2160c4d2a563532c70cd48b0fd75e296",
+        "sha256_in_prefix": "17f47abc1885a33b83613b0fff0c157b2160c4d2a563532c70cd48b0fd75e296",
+        "size_in_bytes": 2426
+      },
+      {
+        "_path": "share/locale/fr/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "88c712792d663836aaa590eb5e2b55b7c6d73d3d97c1519ced69238b10e632be",
+        "sha256_in_prefix": "88c712792d663836aaa590eb5e2b55b7c6d73d3d97c1519ced69238b10e632be",
+        "size_in_bytes": 1868
+      },
+      {
+        "_path": "share/locale/ga/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "58c7d87d5245fed37e04722e33e1b6a33961a2663d1edc8b988ffa1613e05f92",
+        "sha256_in_prefix": "58c7d87d5245fed37e04722e33e1b6a33961a2663d1edc8b988ffa1613e05f92",
+        "size_in_bytes": 2267
+      },
+      {
+        "_path": "share/locale/gl/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "c14907cb9b1a6ab2c1d3bbc63d065b0de9f6264eba57d481c41c90fb869d08ec",
+        "sha256_in_prefix": "c14907cb9b1a6ab2c1d3bbc63d065b0de9f6264eba57d481c41c90fb869d08ec",
+        "size_in_bytes": 1567
+      },
+      {
+        "_path": "share/locale/hu/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "48d742beeae5c1a0880417c13ad619a54aa1809ebe1f7bad24ebf2ab96d7afcc",
+        "sha256_in_prefix": "48d742beeae5c1a0880417c13ad619a54aa1809ebe1f7bad24ebf2ab96d7afcc",
+        "size_in_bytes": 2140
+      },
+      {
+        "_path": "share/locale/id/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "419e0692abf0999c5529349ebbdb418b0702a1548b6d99568066c9094b0a566c",
+        "sha256_in_prefix": "419e0692abf0999c5529349ebbdb418b0702a1548b6d99568066c9094b0a566c",
+        "size_in_bytes": 2178
+      },
+      {
+        "_path": "share/locale/is/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "a73e31eb2eff1dfbbd44270791f325cb72aa9d61e808040b80c488070172c653",
+        "sha256_in_prefix": "a73e31eb2eff1dfbbd44270791f325cb72aa9d61e808040b80c488070172c653",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "share/locale/it/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "009186f09bd479ca4e1066898cc5832d7687ebeeb1a66d116adbd798203cae9f",
+        "sha256_in_prefix": "009186f09bd479ca4e1066898cc5832d7687ebeeb1a66d116adbd798203cae9f",
+        "size_in_bytes": 2300
+      },
+      {
+        "_path": "share/locale/ja/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "dbf6e47092ec1d9ac62c6a69f4508e9d4d28a34b7821bbfa1cf3d2183b5e1ac7",
+        "sha256_in_prefix": "dbf6e47092ec1d9ac62c6a69f4508e9d4d28a34b7821bbfa1cf3d2183b5e1ac7",
+        "size_in_bytes": 2110
+      },
+      {
+        "_path": "share/locale/ko/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "9e749fc1eaff1b08a1eb8ad8d6c3b34ee825ddcc9fc5503fc5037a14e02779bc",
+        "sha256_in_prefix": "9e749fc1eaff1b08a1eb8ad8d6c3b34ee825ddcc9fc5503fc5037a14e02779bc",
+        "size_in_bytes": 1857
+      },
+      {
+        "_path": "share/locale/lv/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "a44a60641edfa311158ccff0a73884eaef964ce75d740eb8e369eee1cb2fd9d6",
+        "sha256_in_prefix": "a44a60641edfa311158ccff0a73884eaef964ce75d740eb8e369eee1cb2fd9d6",
+        "size_in_bytes": 2371
+      },
+      {
+        "_path": "share/locale/nb/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "900ec44835dd84e929041cdbdfe45b0d770671f208f68d8d96a4fb8d12511f69",
+        "sha256_in_prefix": "900ec44835dd84e929041cdbdfe45b0d770671f208f68d8d96a4fb8d12511f69",
+        "size_in_bytes": 1744
+      },
+      {
+        "_path": "share/locale/nl/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "13b7d9ce6b1b48927cdb8cdcbce9f40900e461f3c1054dcb08b2e9e67694cb52",
+        "sha256_in_prefix": "13b7d9ce6b1b48927cdb8cdcbce9f40900e461f3c1054dcb08b2e9e67694cb52",
+        "size_in_bytes": 2204
+      },
+      {
+        "_path": "share/locale/pl/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "a729b457827c90405b774c74fb9e15881f7a772a24ee73d614a042dd926432b0",
+        "sha256_in_prefix": "a729b457827c90405b774c74fb9e15881f7a772a24ee73d614a042dd926432b0",
+        "size_in_bytes": 2116
+      },
+      {
+        "_path": "share/locale/pt/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "65ae6e4606a246bd3dbbafa7c9c8584b67f1886e38ecd36eb158e21d9304ebd2",
+        "sha256_in_prefix": "65ae6e4606a246bd3dbbafa7c9c8584b67f1886e38ecd36eb158e21d9304ebd2",
+        "size_in_bytes": 1816
+      },
+      {
+        "_path": "share/locale/ro/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "3c33cc149454777467ea9cf8c7c32f0692dd00f4df8e45ec22adb611f21afe77",
+        "sha256_in_prefix": "3c33cc149454777467ea9cf8c7c32f0692dd00f4df8e45ec22adb611f21afe77",
+        "size_in_bytes": 1082
+      },
+      {
+        "_path": "share/locale/ru/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "f0cf0bc4515073c99f7ef3f7722a2602bfffc6e068009360dba2007f39b0e913",
+        "sha256_in_prefix": "f0cf0bc4515073c99f7ef3f7722a2602bfffc6e068009360dba2007f39b0e913",
+        "size_in_bytes": 2853
+      },
+      {
+        "_path": "share/locale/sk/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "8eb7f2f9de65e89a8948d1141d1b9240f9d56fa9c3c898bbd870bfcf506ebf3d",
+        "sha256_in_prefix": "8eb7f2f9de65e89a8948d1141d1b9240f9d56fa9c3c898bbd870bfcf506ebf3d",
+        "size_in_bytes": 553
+      },
+      {
+        "_path": "share/locale/sl/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "97c11992b1ea370a3bca072ce7370f10d6855b9062c5d258bab1a9305c4bf61d",
+        "sha256_in_prefix": "97c11992b1ea370a3bca072ce7370f10d6855b9062c5d258bab1a9305c4bf61d",
+        "size_in_bytes": 557
+      },
+      {
+        "_path": "share/locale/sv/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "5d5d3c956d3a20e7c3dc6e1bcdce37bab01955c43e451036271e504bdec22efe",
+        "sha256_in_prefix": "5d5d3c956d3a20e7c3dc6e1bcdce37bab01955c43e451036271e504bdec22efe",
+        "size_in_bytes": 2142
+      },
+      {
+        "_path": "share/locale/th/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "ce5dac8a2a671fd8e96a2ce59fbc602d3dc2b19e85594fe2b380ec221a1b20ab",
+        "sha256_in_prefix": "ce5dac8a2a671fd8e96a2ce59fbc602d3dc2b19e85594fe2b380ec221a1b20ab",
+        "size_in_bytes": 3162
+      },
+      {
+        "_path": "share/locale/tr/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "6f46771bef321effa6a9a2154bbb6cbffc93db3f3e848bf014eff00159eb0909",
+        "sha256_in_prefix": "6f46771bef321effa6a9a2154bbb6cbffc93db3f3e848bf014eff00159eb0909",
+        "size_in_bytes": 1541
+      },
+      {
+        "_path": "share/locale/uk/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "a4cac7153ad95e43f40ff2545c5db663b2be7e20634dd9dfb9830ba6d6371029",
+        "sha256_in_prefix": "a4cac7153ad95e43f40ff2545c5db663b2be7e20634dd9dfb9830ba6d6371029",
+        "size_in_bytes": 547
+      },
+      {
+        "_path": "share/locale/vi/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "4fe92073b448d12989908eef57650678fa4b46764c49066c1477b1be5038d796",
+        "sha256_in_prefix": "4fe92073b448d12989908eef57650678fa4b46764c49066c1477b1be5038d796",
+        "size_in_bytes": 2507
+      },
+      {
+        "_path": "share/locale/wa/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "04e2c2154cdde43ee2f870d64eabf50de937a1f96061e4f12ce0afb65d14b4d3",
+        "sha256_in_prefix": "04e2c2154cdde43ee2f870d64eabf50de937a1f96061e4f12ce0afb65d14b4d3",
+        "size_in_bytes": 560
+      },
+      {
+        "_path": "share/locale/zh_CN/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "09800dbe7b2a2c98fb09effaf9bf0c677622b299e25660a2c841f3a74fdb061d",
+        "sha256_in_prefix": "09800dbe7b2a2c98fb09effaf9bf0c677622b299e25660a2c841f3a74fdb061d",
+        "size_in_bytes": 2045
+      },
+      {
+        "_path": "share/locale/zh_TW/LC_MESSAGES/popt.mo",
+        "path_type": "hardlink",
+        "sha256": "186b9d08d3087cd1e911c9a00d2e34d0bad963c98b1472c7633251a654c39224",
+        "sha256_in_prefix": "186b9d08d3087cd1e911c9a00d2e34d0bad963c98b1472c7633251a654c39224",
+        "size_in_bytes": 1700
+      },
+      {
+        "_path": "share/man/man3/popt.3",
+        "path_type": "hardlink",
+        "sha256": "030439844087751b027b1a73f46502a948044d560f468d6d2ca91d917ef79b41",
+        "sha256_in_prefix": "030439844087751b027b1a73f46502a948044d560f468d6d2ca91d917ef79b41",
+        "size_in_bytes": 31671
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "2868865a437515136840dbb7d901adea798128427f32f984cfa4cc56989f90ce",
+  "size": 188846,
+  "subdir": "linux-64",
+  "timestamp": 1607330288000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/popt-1.16-h0b475e3_2002.tar.bz2",
+  "version": "1.16"
+}

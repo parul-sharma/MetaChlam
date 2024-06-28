@@ -1,0 +1,12 @@
+prefix=/workspaces/MetaChlam/work/conda/strainge_conda_env-6b7d15ae251354c1d471ff9b7274ac18
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libwebpmux
+Description: Library for manipulating the WebP graphics format container
+Version: 1.4.0
+Requires.private: libwebp >= 0.2.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lwebpmux
+Libs.private: -lm

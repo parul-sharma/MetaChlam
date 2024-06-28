@@ -1,0 +1,13 @@
+prefix=/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+gmodule_supported=true
+
+Name: GModule
+Description: Dynamic module loader for GLib
+Version: 2.66.3
+Requires: glib-2.0
+Libs: -L${libdir} -lgmodule-2.0 -pthread
+Libs.private: -ldl
+Cflags: -I${includedir} -pthread

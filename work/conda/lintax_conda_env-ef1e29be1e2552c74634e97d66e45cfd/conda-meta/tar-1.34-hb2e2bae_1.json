@@ -1,0 +1,398 @@
+{
+  "build": "hb2e2bae_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=12",
+    "libiconv >=1.17,<2.0a0"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/tar-1.34-hb2e2bae_1",
+  "files": [
+    "bin/tar",
+    "libexec/rmt",
+    "share/info/tar.info",
+    "share/info/tar.info-1",
+    "share/info/tar.info-2",
+    "share/locale/bg/LC_MESSAGES/tar.mo",
+    "share/locale/ca/LC_MESSAGES/tar.mo",
+    "share/locale/cs/LC_MESSAGES/tar.mo",
+    "share/locale/da/LC_MESSAGES/tar.mo",
+    "share/locale/de/LC_MESSAGES/tar.mo",
+    "share/locale/el/LC_MESSAGES/tar.mo",
+    "share/locale/eo/LC_MESSAGES/tar.mo",
+    "share/locale/es/LC_MESSAGES/tar.mo",
+    "share/locale/et/LC_MESSAGES/tar.mo",
+    "share/locale/eu/LC_MESSAGES/tar.mo",
+    "share/locale/fi/LC_MESSAGES/tar.mo",
+    "share/locale/fr/LC_MESSAGES/tar.mo",
+    "share/locale/ga/LC_MESSAGES/tar.mo",
+    "share/locale/gl/LC_MESSAGES/tar.mo",
+    "share/locale/hr/LC_MESSAGES/tar.mo",
+    "share/locale/hu/LC_MESSAGES/tar.mo",
+    "share/locale/id/LC_MESSAGES/tar.mo",
+    "share/locale/it/LC_MESSAGES/tar.mo",
+    "share/locale/ja/LC_MESSAGES/tar.mo",
+    "share/locale/ko/LC_MESSAGES/tar.mo",
+    "share/locale/ky/LC_MESSAGES/tar.mo",
+    "share/locale/ms/LC_MESSAGES/tar.mo",
+    "share/locale/nb/LC_MESSAGES/tar.mo",
+    "share/locale/nl/LC_MESSAGES/tar.mo",
+    "share/locale/pl/LC_MESSAGES/tar.mo",
+    "share/locale/pt/LC_MESSAGES/tar.mo",
+    "share/locale/pt_BR/LC_MESSAGES/tar.mo",
+    "share/locale/ro/LC_MESSAGES/tar.mo",
+    "share/locale/ru/LC_MESSAGES/tar.mo",
+    "share/locale/sk/LC_MESSAGES/tar.mo",
+    "share/locale/sl/LC_MESSAGES/tar.mo",
+    "share/locale/sr/LC_MESSAGES/tar.mo",
+    "share/locale/sv/LC_MESSAGES/tar.mo",
+    "share/locale/tr/LC_MESSAGES/tar.mo",
+    "share/locale/uk/LC_MESSAGES/tar.mo",
+    "share/locale/vi/LC_MESSAGES/tar.mo",
+    "share/locale/zh_CN/LC_MESSAGES/tar.mo",
+    "share/locale/zh_TW/LC_MESSAGES/tar.mo",
+    "share/man/man1/tar.1",
+    "share/man/man8/rmt.8"
+  ],
+  "fn": "tar-1.34-hb2e2bae_1.tar.bz2",
+  "license": "GPL-3.0-or-later",
+  "link": {
+    "source": "/opt/conda/pkgs/tar-1.34-hb2e2bae_1",
+    "type": 1
+  },
+  "md5": "55aeaa9caf9a1cfd1a8cd3ad4e7885ea",
+  "name": "tar",
+  "package_tarball_full_path": "/opt/conda/pkgs/tar-1.34-hb2e2bae_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/tar",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/tar_1666629154649/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "bcf74668fdc4449993951925d6438d828b9ea56c197ff1029725447bba99e06f",
+        "sha256_in_prefix": "8ea9a2d00db0c75f47c81d1d6a8147ab245f90f0d694b906abdb2b2c4656e28e",
+        "size_in_bytes": 572000
+      },
+      {
+        "_path": "libexec/rmt",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/tar_1666629154649/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "273cfb62f122d5a70d9468526b374e134f29900e785e7480ff0d59f0958f7cde",
+        "sha256_in_prefix": "c92ae17d0b6bbb03bf6e54533bb92bc14d65729dab27ed76fe03276f1b7a9f7b",
+        "size_in_bytes": 68256
+      },
+      {
+        "_path": "share/info/tar.info",
+        "path_type": "hardlink",
+        "sha256": "6010c9698be85bab15598e695cad11f9bc177a8d25d0c1c2eb45ec4e38abd9dd",
+        "sha256_in_prefix": "6010c9698be85bab15598e695cad11f9bc177a8d25d0c1c2eb45ec4e38abd9dd",
+        "size_in_bytes": 13134
+      },
+      {
+        "_path": "share/info/tar.info-1",
+        "path_type": "hardlink",
+        "sha256": "6472f8a2791d16c870702a9ba75baff1a99cfeb27786af9376f4c24a04c49693",
+        "sha256_in_prefix": "6472f8a2791d16c870702a9ba75baff1a99cfeb27786af9376f4c24a04c49693",
+        "size_in_bytes": 302178
+      },
+      {
+        "_path": "share/info/tar.info-2",
+        "path_type": "hardlink",
+        "sha256": "29807606b823612faa237c08357f50aaf67040ceba2c586dab94b37397684f1d",
+        "sha256_in_prefix": "29807606b823612faa237c08357f50aaf67040ceba2c586dab94b37397684f1d",
+        "size_in_bytes": 336935
+      },
+      {
+        "_path": "share/locale/bg/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "c45217791c87b5738ebd5d33836b013251b5a5f3c2c2788fcd449be5916ebcff",
+        "sha256_in_prefix": "c45217791c87b5738ebd5d33836b013251b5a5f3c2c2788fcd449be5916ebcff",
+        "size_in_bytes": 86963
+      },
+      {
+        "_path": "share/locale/ca/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "86b0a26ca5a9fb50e3bfe06e07f27db6b495ccc51bdfdf1ccaa717fc7b072066",
+        "sha256_in_prefix": "86b0a26ca5a9fb50e3bfe06e07f27db6b495ccc51bdfdf1ccaa717fc7b072066",
+        "size_in_bytes": 64091
+      },
+      {
+        "_path": "share/locale/cs/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "ea485234f9a110fbd7f84e3c4c39ee92c2007baeb1dc49c1f6da9ff341beda40",
+        "sha256_in_prefix": "ea485234f9a110fbd7f84e3c4c39ee92c2007baeb1dc49c1f6da9ff341beda40",
+        "size_in_bytes": 64931
+      },
+      {
+        "_path": "share/locale/da/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "93d12b755d5e8ffe316b0056ace9fefa38518c498db371566867eff509c26200",
+        "sha256_in_prefix": "93d12b755d5e8ffe316b0056ace9fefa38518c498db371566867eff509c26200",
+        "size_in_bytes": 60187
+      },
+      {
+        "_path": "share/locale/de/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "e6c6fe18aaa90ff88aa96b6aaedd4384e2a0a6795a4fbe784ecbf352bde23d4d",
+        "sha256_in_prefix": "e6c6fe18aaa90ff88aa96b6aaedd4384e2a0a6795a4fbe784ecbf352bde23d4d",
+        "size_in_bytes": 64342
+      },
+      {
+        "_path": "share/locale/el/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "2f82a00cad5b76cc8be1da31b57c774e1a733288d77b91a15639162708e69e90",
+        "sha256_in_prefix": "2f82a00cad5b76cc8be1da31b57c774e1a733288d77b91a15639162708e69e90",
+        "size_in_bytes": 14467
+      },
+      {
+        "_path": "share/locale/eo/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "8df361c348a9ed3f364d6f66b5a6647e1bf9a0886b9d1f034d5a5433e8a29ef6",
+        "sha256_in_prefix": "8df361c348a9ed3f364d6f66b5a6647e1bf9a0886b9d1f034d5a5433e8a29ef6",
+        "size_in_bytes": 61190
+      },
+      {
+        "_path": "share/locale/es/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "3403b71c1fac4c8d383aa35da5f213269fb0bd7ac57a547dad65bbb1173b979f",
+        "sha256_in_prefix": "3403b71c1fac4c8d383aa35da5f213269fb0bd7ac57a547dad65bbb1173b979f",
+        "size_in_bytes": 65237
+      },
+      {
+        "_path": "share/locale/et/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "33a057d877346a6b6c2034d5f31e45245e94bcb6bb71aad04d50de2e5ba54ea5",
+        "sha256_in_prefix": "33a057d877346a6b6c2034d5f31e45245e94bcb6bb71aad04d50de2e5ba54ea5",
+        "size_in_bytes": 59767
+      },
+      {
+        "_path": "share/locale/eu/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "d9ec3e867d0e9ee18ac7b084c9cd206dac8990ce80be1708a36e20ab9ac34e30",
+        "sha256_in_prefix": "d9ec3e867d0e9ee18ac7b084c9cd206dac8990ce80be1708a36e20ab9ac34e30",
+        "size_in_bytes": 32368
+      },
+      {
+        "_path": "share/locale/fi/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "4460d323792c29d935a556015f38cec7345cd37fc05368a83bece18ae5f66fa0",
+        "sha256_in_prefix": "4460d323792c29d935a556015f38cec7345cd37fc05368a83bece18ae5f66fa0",
+        "size_in_bytes": 57193
+      },
+      {
+        "_path": "share/locale/fr/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "992e3c1e651276ba1bd8f074a5bd8eb3b1235cc70a4834eec92549efb99bdd29",
+        "sha256_in_prefix": "992e3c1e651276ba1bd8f074a5bd8eb3b1235cc70a4834eec92549efb99bdd29",
+        "size_in_bytes": 67389
+      },
+      {
+        "_path": "share/locale/ga/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "500800bc8b5339501d2b0e4dc334fd7ca354c8b73b3e42093febeb296316432e",
+        "sha256_in_prefix": "500800bc8b5339501d2b0e4dc334fd7ca354c8b73b3e42093febeb296316432e",
+        "size_in_bytes": 65812
+      },
+      {
+        "_path": "share/locale/gl/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "465a710f57ca43e6423125385805658c9afd0eecd372a70fc00e414ed13bfaf4",
+        "sha256_in_prefix": "465a710f57ca43e6423125385805658c9afd0eecd372a70fc00e414ed13bfaf4",
+        "size_in_bytes": 10693
+      },
+      {
+        "_path": "share/locale/hr/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "ad379afd277610b1707f29ac4f031ac702ce3f85d5c6fa989d6819be3f5b542f",
+        "sha256_in_prefix": "ad379afd277610b1707f29ac4f031ac702ce3f85d5c6fa989d6819be3f5b542f",
+        "size_in_bytes": 63909
+      },
+      {
+        "_path": "share/locale/hu/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "e5782d43d0e8fda9b5c69cfaacb7bb7d139a25e22f3c594f3e4bd04a9a67e182",
+        "sha256_in_prefix": "e5782d43d0e8fda9b5c69cfaacb7bb7d139a25e22f3c594f3e4bd04a9a67e182",
+        "size_in_bytes": 67032
+      },
+      {
+        "_path": "share/locale/id/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "34d7067a1c00a68bfe15e753a7ee49f4b0d613402ddcac2ed919747ff30d958f",
+        "sha256_in_prefix": "34d7067a1c00a68bfe15e753a7ee49f4b0d613402ddcac2ed919747ff30d958f",
+        "size_in_bytes": 58343
+      },
+      {
+        "_path": "share/locale/it/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "2bf63ba17e8efdc0f6138aa969b826410730d650aded2b266caacc526fb46b0d",
+        "sha256_in_prefix": "2bf63ba17e8efdc0f6138aa969b826410730d650aded2b266caacc526fb46b0d",
+        "size_in_bytes": 63734
+      },
+      {
+        "_path": "share/locale/ja/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "3c941234f06179f33d7fd1664c9afb2d62b8230820cdb97743ae33f4e584f98d",
+        "sha256_in_prefix": "3c941234f06179f33d7fd1664c9afb2d62b8230820cdb97743ae33f4e584f98d",
+        "size_in_bytes": 59218
+      },
+      {
+        "_path": "share/locale/ko/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "ec5fe7f44c399c50f06859505d3ede3ff395bd8bfd4c8142c3f2a8e38c1e199c",
+        "sha256_in_prefix": "ec5fe7f44c399c50f06859505d3ede3ff395bd8bfd4c8142c3f2a8e38c1e199c",
+        "size_in_bytes": 66173
+      },
+      {
+        "_path": "share/locale/ky/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "13b182f43462cfa79ec39ca7447349cce9c4b1d474a1412bd41b4f426c2d0e71",
+        "sha256_in_prefix": "13b182f43462cfa79ec39ca7447349cce9c4b1d474a1412bd41b4f426c2d0e71",
+        "size_in_bytes": 55118
+      },
+      {
+        "_path": "share/locale/ms/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "cabb30a123f79d5b2e9e5a9a67b4cc90aca6946224a54d233f289cc256604cb3",
+        "sha256_in_prefix": "cabb30a123f79d5b2e9e5a9a67b4cc90aca6946224a54d233f289cc256604cb3",
+        "size_in_bytes": 9658
+      },
+      {
+        "_path": "share/locale/nb/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "6be9c68a66f6e1d716b5304d31ef4026219b049fcb20ae4063721e9625a1ee65",
+        "sha256_in_prefix": "6be9c68a66f6e1d716b5304d31ef4026219b049fcb20ae4063721e9625a1ee65",
+        "size_in_bytes": 60880
+      },
+      {
+        "_path": "share/locale/nl/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "3a833651df474f8fe58c382cac45ea5a91a1c4d9ce8e468b632e0ea96bdffc58",
+        "sha256_in_prefix": "3a833651df474f8fe58c382cac45ea5a91a1c4d9ce8e468b632e0ea96bdffc58",
+        "size_in_bytes": 63760
+      },
+      {
+        "_path": "share/locale/pl/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "90ed9c54cb9602c09136592b8dcec5f4c8e6fa0d34c6271d1f5bfe53e37de35b",
+        "sha256_in_prefix": "90ed9c54cb9602c09136592b8dcec5f4c8e6fa0d34c6271d1f5bfe53e37de35b",
+        "size_in_bytes": 65132
+      },
+      {
+        "_path": "share/locale/pt/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "243caab1cdc36cd0d214ca3df70db543b57d395a706d32fec058b28c3a18e41e",
+        "sha256_in_prefix": "243caab1cdc36cd0d214ca3df70db543b57d395a706d32fec058b28c3a18e41e",
+        "size_in_bytes": 62527
+      },
+      {
+        "_path": "share/locale/pt_BR/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "4718b55f5d265262130279827a343f5d0c71df5f8552765f42db93df18f9645a",
+        "sha256_in_prefix": "4718b55f5d265262130279827a343f5d0c71df5f8552765f42db93df18f9645a",
+        "size_in_bytes": 63982
+      },
+      {
+        "_path": "share/locale/ro/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "b14b77e9e75a70358d01c188ff2a1d794f58e11c9b0280aec4f0182504de137b",
+        "sha256_in_prefix": "b14b77e9e75a70358d01c188ff2a1d794f58e11c9b0280aec4f0182504de137b",
+        "size_in_bytes": 65028
+      },
+      {
+        "_path": "share/locale/ru/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "cecb0c585417721d68749a892c9cd1f8e91404163321d3636664dc25acac0645",
+        "sha256_in_prefix": "cecb0c585417721d68749a892c9cd1f8e91404163321d3636664dc25acac0645",
+        "size_in_bytes": 83444
+      },
+      {
+        "_path": "share/locale/sk/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "aecbf49796fb56a9e30de924f795345b36fc9e214ddac6d1cd8deafe08b515b8",
+        "sha256_in_prefix": "aecbf49796fb56a9e30de924f795345b36fc9e214ddac6d1cd8deafe08b515b8",
+        "size_in_bytes": 10303
+      },
+      {
+        "_path": "share/locale/sl/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "0bb4b7bdddc25bfaa4edead5b776ff7ca310818d008baaea1a3676490d9edfff",
+        "sha256_in_prefix": "0bb4b7bdddc25bfaa4edead5b776ff7ca310818d008baaea1a3676490d9edfff",
+        "size_in_bytes": 59520
+      },
+      {
+        "_path": "share/locale/sr/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "a4d84b9895e95b3dc3683dd325ec87055f7c6017510f2022317bc7a5cd5591e0",
+        "sha256_in_prefix": "a4d84b9895e95b3dc3683dd325ec87055f7c6017510f2022317bc7a5cd5591e0",
+        "size_in_bytes": 82073
+      },
+      {
+        "_path": "share/locale/sv/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "02ab50d033b55f389a6d1a95d203697d3b252207d4326d164fa9d1318fa27cc6",
+        "sha256_in_prefix": "02ab50d033b55f389a6d1a95d203697d3b252207d4326d164fa9d1318fa27cc6",
+        "size_in_bytes": 61790
+      },
+      {
+        "_path": "share/locale/tr/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "d09a281756d2e724d8a0a0fb9cce6e48bfc9e61825df3862047630350a2b026d",
+        "sha256_in_prefix": "d09a281756d2e724d8a0a0fb9cce6e48bfc9e61825df3862047630350a2b026d",
+        "size_in_bytes": 61110
+      },
+      {
+        "_path": "share/locale/uk/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "27126fda63116034b80113bbc3e8bfdd3da382bf5ad62e24b599fd9efc4a42fc",
+        "sha256_in_prefix": "27126fda63116034b80113bbc3e8bfdd3da382bf5ad62e24b599fd9efc4a42fc",
+        "size_in_bytes": 84186
+      },
+      {
+        "_path": "share/locale/vi/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "fcf7b2109ab6456c96e445a9c7dbd427b9f35d64ca001264b63cfd61dcd5265b",
+        "sha256_in_prefix": "fcf7b2109ab6456c96e445a9c7dbd427b9f35d64ca001264b63cfd61dcd5265b",
+        "size_in_bytes": 69054
+      },
+      {
+        "_path": "share/locale/zh_CN/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "fbab5c57e3dd5766884181b4fb29e7c144e94b2ff71a0fcf1d0c5a1ca8fd9ba9",
+        "sha256_in_prefix": "fbab5c57e3dd5766884181b4fb29e7c144e94b2ff71a0fcf1d0c5a1ca8fd9ba9",
+        "size_in_bytes": 57717
+      },
+      {
+        "_path": "share/locale/zh_TW/LC_MESSAGES/tar.mo",
+        "path_type": "hardlink",
+        "sha256": "e19e105a47f37d1cc89d707e446d47a7b11e3f5303905089294e9b7a23a0b224",
+        "sha256_in_prefix": "e19e105a47f37d1cc89d707e446d47a7b11e3f5303905089294e9b7a23a0b224",
+        "size_in_bytes": 58290
+      },
+      {
+        "_path": "share/man/man1/tar.1",
+        "path_type": "hardlink",
+        "sha256": "366c4ab055d6288c7b5a1a205135217db71d4380ab75cb1ab9e3ede587e0225a",
+        "sha256_in_prefix": "366c4ab055d6288c7b5a1a205135217db71d4380ab75cb1ab9e3ede587e0225a",
+        "size_in_bytes": 42157
+      },
+      {
+        "_path": "share/man/man8/rmt.8",
+        "path_type": "hardlink",
+        "sha256": "563be23214a723e147134e076d6d786334fcc0d9b999448e575eb19f6abd680e",
+        "sha256_in_prefix": "563be23214a723e147134e076d6d786334fcc0d9b999448e575eb19f6abd680e",
+        "size_in_bytes": 5355
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "469b04c8f5ed59b8765cc501b593903ca831e604a59f40d6578a3326b082a946",
+  "size": 914685,
+  "subdir": "linux-64",
+  "timestamp": 1666629652000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/tar-1.34-hb2e2bae_1.tar.bz2",
+  "version": "1.34"
+}

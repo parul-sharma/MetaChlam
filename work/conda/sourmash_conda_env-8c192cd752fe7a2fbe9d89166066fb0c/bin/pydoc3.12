@@ -1,0 +1,5 @@
+#!/workspaces/MetaChlam/work/conda/sourmash_conda_env-8c192cd752fe7a2fbe9d89166066fb0c/bin/python3.12
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

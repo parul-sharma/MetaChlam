@@ -1,0 +1,15 @@
+prefix=/workspaces/MetaChlam/work/conda/strainge_conda_env-6b7d15ae251354c1d471ff9b7274ac18
+bindir=${prefix}/bin
+mandir=${prefix}/share/man
+docdir=${prefix}/share/doc/openjpeg
+libdir=${prefix}/lib
+includedir=${prefix}/include/openjpeg-2.5
+
+Name: openjp2
+Description: JPEG2000 library (Part 1 and 2)
+URL: http://www.openjpeg.org/
+Version: 2.5.2
+Libs: -L${libdir} -lopenjp2
+Libs.private: -lm
+Cflags: -I${includedir}
+Cflags.private: -DOPJ_STATIC

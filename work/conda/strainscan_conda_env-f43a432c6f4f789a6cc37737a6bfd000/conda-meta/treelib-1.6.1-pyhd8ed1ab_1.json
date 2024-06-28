@@ -1,0 +1,178 @@
+{
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "future",
+    "python >=2.7"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/treelib-1.6.1-pyhd8ed1ab_1",
+  "files": [
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/LICENSE",
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/REQUESTED",
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/direct_url.json",
+    "lib/python3.7/site-packages/treelib-1.6.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/treelib/__init__.py",
+    "lib/python3.7/site-packages/treelib/exceptions.py",
+    "lib/python3.7/site-packages/treelib/misc.py",
+    "lib/python3.7/site-packages/treelib/node.py",
+    "lib/python3.7/site-packages/treelib/plugins.py",
+    "lib/python3.7/site-packages/treelib/tree.py",
+    "lib/python3.7/site-packages/treelib/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/treelib/__pycache__/exceptions.cpython-37.pyc",
+    "lib/python3.7/site-packages/treelib/__pycache__/misc.cpython-37.pyc",
+    "lib/python3.7/site-packages/treelib/__pycache__/node.cpython-37.pyc",
+    "lib/python3.7/site-packages/treelib/__pycache__/plugins.cpython-37.pyc",
+    "lib/python3.7/site-packages/treelib/__pycache__/tree.cpython-37.pyc"
+  ],
+  "fn": "treelib-1.6.1-pyhd8ed1ab_1.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/opt/conda/pkgs/treelib-1.6.1-pyhd8ed1ab_1",
+    "type": 1
+  },
+  "md5": "897f4a9fd86b9c412ca4ce6e0ccf51cd",
+  "name": "treelib",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/conda/pkgs/treelib-1.6.1-pyhd8ed1ab_1.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "4e85843e06439177dbce5525b00a3c96c3470c6c5cd9b1c80eba5d7c65990c1b",
+        "sha256_in_prefix": "4e85843e06439177dbce5525b00a3c96c3470c6c5cd9b1c80eba5d7c65990c1b",
+        "size_in_bytes": 773
+      },
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "80e0807a378cfb7749bbb3a0f5d9db44c544cabf1597ef3b23cd72e4122fff9e",
+        "sha256_in_prefix": "80e0807a378cfb7749bbb3a0f5d9db44c544cabf1597ef3b23cd72e4122fff9e",
+        "size_in_bytes": 1135
+      },
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "9cd4bca49adb3a9cecf15a64048aa4a873d0bc797f0ae7ef775737319339335b",
+        "sha256_in_prefix": "9cd4bca49adb3a9cecf15a64048aa4a873d0bc797f0ae7ef775737319339335b",
+        "size_in_bytes": 1389
+      },
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "sha256_in_prefix": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "9f5af18a54a13b5c51dcade8185c0969567ea84717bcf350e20c01bc67003006",
+        "sha256_in_prefix": "9f5af18a54a13b5c51dcade8185c0969567ea84717bcf350e20c01bc67003006",
+        "size_in_bytes": 103
+      },
+      {
+        "_path": "site-packages/treelib-1.6.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "e1f4469037e14fd1b5f17bd758a05bfd06d5db8a828416216e6435a13cc7f2cc",
+        "sha256_in_prefix": "e1f4469037e14fd1b5f17bd758a05bfd06d5db8a828416216e6435a13cc7f2cc",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "site-packages/treelib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6db467d74c2f03a8c934c84e2a7e645cef9794fb26dd3f6d3ec60292fc122d41",
+        "sha256_in_prefix": "6db467d74c2f03a8c934c84e2a7e645cef9794fb26dd3f6d3ec60292fc122d41",
+        "size_in_bytes": 1594
+      },
+      {
+        "_path": "site-packages/treelib/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "eaac54b587473f04048b7494035d550acb00bbbdd8d17292bfa57edddffc30d0",
+        "sha256_in_prefix": "eaac54b587473f04048b7494035d550acb00bbbdd8d17292bfa57edddffc30d0",
+        "size_in_bytes": 943
+      },
+      {
+        "_path": "site-packages/treelib/misc.py",
+        "path_type": "hardlink",
+        "sha256": "3d70bb0e8e7e06d56d6e09a90c9169ccf6793a22734527e293630b822bbccf00",
+        "sha256_in_prefix": "3d70bb0e8e7e06d56d6e09a90c9169ccf6793a22734527e293630b822bbccf00",
+        "size_in_bytes": 1575
+      },
+      {
+        "_path": "site-packages/treelib/node.py",
+        "path_type": "hardlink",
+        "sha256": "a14a13f348e97d54304e2061a8659b150cf60f027097ad9d55632185cd37cad4",
+        "sha256_in_prefix": "a14a13f348e97d54304e2061a8659b150cf60f027097ad9d55632185cd37cad4",
+        "size_in_bytes": 9583
+      },
+      {
+        "_path": "site-packages/treelib/plugins.py",
+        "path_type": "hardlink",
+        "sha256": "fcb07718696ab5b2a0fceebcc4214ccf0bce8ae8d743b064572bf544908f4552",
+        "sha256_in_prefix": "fcb07718696ab5b2a0fceebcc4214ccf0bce8ae8d743b064572bf544908f4552",
+        "size_in_bytes": 1253
+      },
+      {
+        "_path": "site-packages/treelib/tree.py",
+        "path_type": "hardlink",
+        "sha256": "cf180fdfc88b6ced8a5bcf4074b072d1254303b403c0fc467a3fd5c7d7a95f3c",
+        "sha256_in_prefix": "cf180fdfc88b6ced8a5bcf4074b072d1254303b403c0fc467a3fd5c7d7a95f3c",
+        "size_in_bytes": 37485
+      },
+      {
+        "_path": "lib/python3.7/site-packages/treelib/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/treelib/__pycache__/exceptions.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/treelib/__pycache__/misc.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/treelib/__pycache__/node.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/treelib/__pycache__/plugins.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/treelib/__pycache__/tree.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "c2fb49d352a30941dce6503ca6142123ff89aa0ba18fae6f4078ae2a19fbd5f1",
+  "size": 20334,
+  "subdir": "noarch",
+  "timestamp": 1676986202000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/treelib-1.6.1-pyhd8ed1ab_1.conda",
+  "version": "1.6.1"
+}

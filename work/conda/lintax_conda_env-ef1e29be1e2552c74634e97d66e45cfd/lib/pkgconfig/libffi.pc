@@ -1,0 +1,11 @@
+prefix=/workspaces/MetaChlam/work/conda/lintax_conda_env-ef1e29be1e2552c74634e97d66e45cfd
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/workspaces/MetaChlam/work/conda/lintax_conda_env-ef1e29be1e2552c74634e97d66e45cfd/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 2.7.2
+Requires.private: freetype2, graphite2, glib-2.0
+Libs: -L${libdir} -lharfbuzz
+Libs.private: -pthread -lm
+Cflags: -I${includedir}/harfbuzz

@@ -1,0 +1,5 @@
+#!/workspaces/MetaChlam/work/conda/lintax_conda_env-ef1e29be1e2552c74634e97d66e45cfd/bin/python3.11
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

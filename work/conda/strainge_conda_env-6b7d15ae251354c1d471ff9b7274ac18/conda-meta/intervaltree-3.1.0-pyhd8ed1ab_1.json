@@ -1,0 +1,160 @@
+{
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=2.7",
+    "sortedcontainers"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/intervaltree-3.1.0-pyhd8ed1ab_1",
+  "files": [
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/LICENSE.txt",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/intervaltree-3.1.0.dist-info/zip-safe",
+    "lib/python3.9/site-packages/intervaltree/__init__.py",
+    "lib/python3.9/site-packages/intervaltree/interval.py",
+    "lib/python3.9/site-packages/intervaltree/intervaltree.py",
+    "lib/python3.9/site-packages/intervaltree/node.py",
+    "lib/python3.9/site-packages/intervaltree/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/intervaltree/__pycache__/interval.cpython-39.pyc",
+    "lib/python3.9/site-packages/intervaltree/__pycache__/intervaltree.cpython-39.pyc",
+    "lib/python3.9/site-packages/intervaltree/__pycache__/node.cpython-39.pyc"
+  ],
+  "fn": "intervaltree-3.1.0-pyhd8ed1ab_1.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/opt/conda/pkgs/intervaltree-3.1.0-pyhd8ed1ab_1",
+    "type": 1
+  },
+  "md5": "e32bb5b0369e819c4dde653d4c4572f3",
+  "name": "intervaltree",
+  "noarch": "python",
+  "package_tarball_full_path": "/opt/conda/pkgs/intervaltree-3.1.0-pyhd8ed1ab_1.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "sha256_in_prefix": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_in_bytes": 11358
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "a2b42aa120a5d3cca245f3462a76c85f8991e1812880394a08e5755b228cb4ff",
+        "sha256_in_prefix": "a2b42aa120a5d3cca245f3462a76c85f8991e1812880394a08e5755b228cb4ff",
+        "size_in_bytes": 12369
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e775a2766de208a276fdd6efabe72d6d500d5a6a022792a1c235caa15812cad0",
+        "sha256_in_prefix": "e775a2766de208a276fdd6efabe72d6d500d5a6a022792a1c235caa15812cad0",
+        "size_in_bytes": 1344
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "6bece9151209cceab941fba10736e1880d5e1d3ccd0899fc39d46f85d357d119",
+        "sha256_in_prefix": "6bece9151209cceab941fba10736e1880d5e1d3ccd0899fc39d46f85d357d119",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "c73a92344d1193349fcd2e8ee4a50a4f797aeb71666a7b7fdb57b9b78f3cac0e",
+        "sha256_in_prefix": "c73a92344d1193349fcd2e8ee4a50a4f797aeb71666a7b7fdb57b9b78f3cac0e",
+        "size_in_bytes": 108
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a8189645eb37752c83b432a7aa44544b61f97d8c9809e0176019154ed4c2b908",
+        "sha256_in_prefix": "a8189645eb37752c83b432a7aa44544b61f97d8c9809e0176019154ed4c2b908",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "site-packages/intervaltree-3.1.0.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/intervaltree/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "60ecc9dc39ac442e3c4c67b309607b5bf09fd296f587bfae7a198de24dbc736c",
+        "sha256_in_prefix": "60ecc9dc39ac442e3c4c67b309607b5bf09fd296f587bfae7a198de24dbc736c",
+        "size_in_bytes": 846
+      },
+      {
+        "_path": "site-packages/intervaltree/interval.py",
+        "path_type": "hardlink",
+        "sha256": "b91c8f378b66a7916ebd555df0eafa88ea225759d8a8ac2bd4256f80c2c02083",
+        "sha256_in_prefix": "b91c8f378b66a7916ebd555df0eafa88ea225759d8a8ac2bd4256f80c2c02083",
+        "size_in_bytes": 10230
+      },
+      {
+        "_path": "site-packages/intervaltree/intervaltree.py",
+        "path_type": "hardlink",
+        "sha256": "92a9021ba9e1562010db627a477fa641418e9f0c2e84a6ca203437c741b0b569",
+        "sha256_in_prefix": "92a9021ba9e1562010db627a477fa641418e9f0c2e84a6ca203437c741b0b569",
+        "size_in_bytes": 38289
+      },
+      {
+        "_path": "site-packages/intervaltree/node.py",
+        "path_type": "hardlink",
+        "sha256": "4c50417da85afc269715a921feb6656570a9820f3b7ad00d31d80afbc0d1a5d9",
+        "sha256_in_prefix": "4c50417da85afc269715a921feb6656570a9820f3b7ad00d31d80afbc0d1a5d9",
+        "size_in_bytes": 21024
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intervaltree/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intervaltree/__pycache__/interval.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intervaltree/__pycache__/intervaltree.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/intervaltree/__pycache__/node.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "5d7f0d432772b2a1a750cd61b522e9c283dad04058a130656c95ad3321a308c5",
+  "size": 27592,
+  "subdir": "noarch",
+  "timestamp": 1683532332000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/intervaltree-3.1.0-pyhd8ed1ab_1.conda",
+  "version": "3.1.0"
+}
