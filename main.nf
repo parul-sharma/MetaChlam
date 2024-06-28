@@ -135,6 +135,44 @@ process run_strainge {
     """
 }
 
+process run_sourmash_kmerize_sample {
+    publishDir "${params.outdir}/${sample_id}", mode: 'copy'
+    conda 'envs/sourmash_conda_env.yml'
+
+    tag "filter $sample_id" 
+
+    input: 
+    tuple val(sample_id), path(reads)
+    
+    output:
+    tuple val(sample_id), path("${sample_id}.zip"), emit: sample_sig
+
+    script:
+    """
+        mkdir -p ${params.outdir}/${sample_id}
+        sourmash sketch dna -p scaled=1000,k=31 ${reads[0]} ${reads[1]} -o ${sample_id}.zip --name ${sample_id} 
+    """
+}
+
+process run_sourmash {
+    publishDir "${params.outdir}/${sample_id}", mode: 'copy'
+    conda 'envs/sourmash_conda_env.yml'
+
+    tag "filter $sample_id" 
+
+    input: 
+    tuple val(sample_id), path(sample_sig)
+    
+    output:
+    tuple val(sample_id), path("${sample_id}.gather")
+
+    script:
+    """
+        mkdir -p ${params.outdir}/${sample_id}
+        sourmash gather ${sample_sig} $baseDir/databases/sourmash_db.zip > ${sample_id}.gather
+    """
+}
+
 //workflow
 workflow {
     reads = Channel.fromFilePairs(params.reads, checkIfExists: true)
@@ -143,4 +181,6 @@ workflow {
     lintax_out_ch = run_lintax(kraken_out_ch.kraken_output, kraken_out_ch.kraken_report)
     strainge_kmer_out_ch = run_strainge_kmerize_sample(reads)
     strainge_out_ch = run_strainge(strainge_kmer_out_ch.sample_hdf5)
+    sourmash_kmer_out_ch = run_sourmash_kmerize_sample(reads)
+    sourmash_out_ch = run_sourmash(sourmash_kmer_out_ch.sample_sig)
 }
