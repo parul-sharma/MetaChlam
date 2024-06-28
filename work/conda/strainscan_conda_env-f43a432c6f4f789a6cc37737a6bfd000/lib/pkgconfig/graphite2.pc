@@ -1,7 +1,0 @@
-
-Name: Graphite2
-Description: Font rendering engine for Complex Scripts
-Version: 3.0.1
-Libs: -L/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000/lib -lgraphite2
-Cflags: -I/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000/include
-

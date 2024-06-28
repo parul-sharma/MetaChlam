@@ -1,9 +1,0 @@
-
-
-overlap     p_query p_match
----------   ------- -------
-1.0 Mbp        6.4%   95.8%    NP-UA__D__D/CS637/111 Chlamydia trachomatis D/CS637/11 chromosome, complete genome
-
-found 1 matches total;
-the recovered matches hit 6.4% of the query k-mers (unweighted).
-
