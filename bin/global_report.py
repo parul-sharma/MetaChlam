@@ -23,15 +23,8 @@ def extract_linreport(file):
 
 # Function to extract relevant data from sourmash output
 def extract_sourmash(file):
-    with open(file) as f:
-        lines = f.readlines()
-    # Clean up the lines by removing empty lines and stripping leading/trailing whitespace
-    lines = [line.strip() for line in lines if line.strip()]
-    print(lines)
-    # Extract strain and p_query from the relevant lines
-    strain = lines[3].split()[-1]  # Extract strain name from the fourth line
-    p_query = float(lines[4].split()[0])  # Extract p_query value from the fifth line
-    sourmash_data = pd.DataFrame({'strain': [strain], 'p_query': [p_query]})
+    sourmash_df = pd.read_csv(file, sep=',')
+    sourmash_data = sourmash_df.loc[:, ['name', 'f_orig_query']]
     return sourmash_data
 
 # Function to extract relevant data from strainscan output
