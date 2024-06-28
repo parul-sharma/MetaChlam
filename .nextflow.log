@@ -1,99 +1,107 @@
-Jun-28 16:08:45.363 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
-Jun-28 16:08:45.560 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
-Jun-28 16:08:45.585 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
-Jun-28 16:08:45.597 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-28 16:08:45.599 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-28 16:08:45.603 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
-Jun-28 16:08:45.619 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-28 16:08:45.656 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/MetaChlam/nextflow.config
-Jun-28 16:08:45.671 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/MetaChlam/nextflow.config
-Jun-28 16:08:45.729 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
-Jun-28 16:08:45.733 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4e92466a] - activable => nextflow.secret.LocalSecretsProvider@4e92466a
-Jun-28 16:08:45.741 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Jun-28 16:08:46.302 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Jun-28 16:08:46.323 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [zen_fermi] DSL2 - revision: aad60617f8
-Jun-28 16:08:46.325 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jun-28 16:08:46.326 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jun-28 16:08:46.409 [main] DEBUG nextflow.Session - Session UUID: 91d72269-6585-4b9a-b5fe-f15cfcd3e485
-Jun-28 16:08:46.410 [main] DEBUG nextflow.Session - Run name: zen_fermi
-Jun-28 16:08:46.411 [main] DEBUG nextflow.Session - Executor pool size: 4
-Jun-28 16:08:46.422 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jun-28 16:08:46.429 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jun-28 16:08:46.453 [main] DEBUG nextflow.cli.CmdRun - 
+Jun-28 18:15:39.515 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
+Jun-28 18:15:39.701 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jun-28 18:15:39.727 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jun-28 18:15:39.741 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-28 18:15:39.742 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-28 18:15:39.746 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jun-28 18:15:39.763 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-28 18:15:39.790 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/MetaChlam/nextflow.config
+Jun-28 18:15:39.794 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/MetaChlam/nextflow.config
+Jun-28 18:15:39.832 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jun-28 18:15:39.837 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4e92466a] - activable => nextflow.secret.LocalSecretsProvider@4e92466a
+Jun-28 18:15:39.846 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jun-28 18:15:40.376 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jun-28 18:15:40.395 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [shrivelled_meitner] DSL2 - revision: dffaf66920
+Jun-28 18:15:40.397 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-28 18:15:40.397 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-28 18:15:40.456 [main] DEBUG nextflow.Session - Session UUID: 91d72269-6585-4b9a-b5fe-f15cfcd3e485
+Jun-28 18:15:40.457 [main] DEBUG nextflow.Session - Run name: shrivelled_meitner
+Jun-28 18:15:40.457 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jun-28 18:15:40.466 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-28 18:15:40.473 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jun-28 18:15:40.495 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.04.2 build 5914
   Created: 29-05-2024 06:19 UTC 
   System: Linux 6.5.0-1022-azure
   Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
   Encoding: UTF-8 (UTF-8)
-  Process: 68263@codespaces-40befa [127.0.0.1]
-  CPUs: 4 - Mem: 15.6 GB (1.5 GB) - Swap: 0 (0)
-Jun-28 16:08:46.496 [main] DEBUG nextflow.Session - Work-dir: /workspaces/MetaChlam/work [ext2/ext3]
-Jun-28 16:08:46.539 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jun-28 16:08:46.552 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jun-28 16:08:46.583 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jun-28 16:08:46.619 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
-Jun-28 16:08:46.725 [main] DEBUG nextflow.Session - Session start
-Jun-28 16:08:47.915 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jun-28 16:08:47.934 [main] INFO  nextflow.Nextflow - 
+  Process: 13539@codespaces-40befa [127.0.0.1]
+  CPUs: 4 - Mem: 15.6 GB (4.8 GB) - Swap: 0 (0)
+Jun-28 18:15:40.546 [main] DEBUG nextflow.Session - Work-dir: /workspaces/MetaChlam/work [ext2/ext3]
+Jun-28 18:15:40.604 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-28 18:15:40.615 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-28 18:15:40.657 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-28 18:15:40.706 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jun-28 18:15:40.829 [main] DEBUG nextflow.Session - Session start
+Jun-28 18:15:41.861 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-28 18:15:41.883 [main] INFO  nextflow.Nextflow - 
 MetaChlam (version 1)
 ===================================
 reads        : /workspaces/MetaChlam/sample/*_R{1,2}.fastq
 outdir       : /workspaces/MetaChlam/output
 
-Jun-28 16:08:48.137 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-28 16:08:48.138 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-28 16:08:48.145 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jun-28 16:08:48.152 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
-Jun-28 16:08:48.155 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jun-28 16:08:48.237 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-28 16:08:48.238 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-28 16:08:48.249 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-28 16:08:48.250 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-28 16:08:48.258 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-28 16:08:48.259 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-28 16:08:48.274 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-28 16:08:48.274 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-28 16:08:48.283 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-28 16:08:48.284 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-28 16:08:48.292 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-28 16:08:48.292 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-28 16:08:48.303 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_d4323ea9185eb646: /workspaces/MetaChlam/main.nf
-Jun-28 16:08:48.304 [main] DEBUG nextflow.Session - Session aborted -- Cause: Process `run_global_report` declares 4 input channels but 5 were specified
-Jun-28 16:08:48.322 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jun-28 16:08:48.323 [main] ERROR nextflow.cli.Launcher - Process `run_global_report` declares 4 input channels but 5 were specified
-nextflow.exception.ScriptRuntimeException: Process `run_global_report` declares 4 input channels but 5 were specified
-	at nextflow.script.ProcessDef.run(ProcessDef.groovy:175)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
-	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:103)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:391)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:330)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_d4323ea9185eb646$_runScript_closure10$_closure52.doCall(Script_d4323ea9185eb646:227)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovy.lang.Closure.call(Closure.java:412)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run0(BaseScript.groovy:198)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
-	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
-	at nextflow.cli.Launcher.run(Launcher.groovy:503)
-	at nextflow.cli.Launcher.main(Launcher.groovy:657)
+Jun-28 18:15:42.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.198 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.206 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-28 18:15:42.218 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jun-28 18:15:42.221 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-28 18:15:42.318 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.318 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.336 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.336 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.348 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.348 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.362 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.363 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.378 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.379 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.396 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.396 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.422 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.423 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.454 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-28 18:15:42.455 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-28 18:15:42.461 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: run_global_report, run_strainge_kmerize_sample, run_sourmash, run_strainge, combine_summaries, run_kraken, run_strainscan, run_lintax, run_sourmash_kmerize_sample
+Jun-28 18:15:42.462 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Jun-28 18:15:42.475 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_strainscan
+Jun-28 18:15:42.477 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_kraken
+Jun-28 18:15:42.481 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_lintax
+Jun-28 18:15:42.482 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_strainge_kmerize_sample
+Jun-28 18:15:42.486 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_strainge
+Jun-28 18:15:42.487 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_sourmash_kmerize_sample
+Jun-28 18:15:42.488 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/MetaChlam/sample/; pattern: *_R{1,2}.fastq; options: [checkIfExists:true]
+Jun-28 18:15:42.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_sourmash
+Jun-28 18:15:42.495 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_global_report
+Jun-28 18:15:42.496 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > combine_summaries
+Jun-28 18:15:42.498 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_dcef0cf35213e3f9: /workspaces/MetaChlam/main.nf
+Jun-28 18:15:42.500 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-28 18:15:42.500 [main] DEBUG nextflow.Session - Session await
+Jun-28 18:15:42.775 [Actor Thread 10] DEBUG nextflow.conda.CondaCache - conda found local env for environment=envs/sourmash_conda_env.yml; path=/workspaces/MetaChlam/work/conda/sourmash_conda_env-8c192cd752fe7a2fbe9d89166066fb0c
+Jun-28 18:15:42.775 [Actor Thread 9] DEBUG nextflow.conda.CondaCache - conda found local env for environment=envs/lintax_conda_env.yml; path=/workspaces/MetaChlam/work/conda/lintax_conda_env-ef1e29be1e2552c74634e97d66e45cfd
+Jun-28 18:15:42.776 [Actor Thread 12] DEBUG nextflow.conda.CondaCache - conda found local env for environment=envs/strainge_conda_env.yml; path=/workspaces/MetaChlam/work/conda/strainge_conda_env-6b7d15ae251354c1d471ff9b7274ac18
+Jun-28 18:15:42.774 [Actor Thread 11] DEBUG nextflow.conda.CondaCache - conda found local env for environment=envs/strainscan_conda_env.yml; path=/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000
+Jun-28 18:15:42.902 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [17/38acce] Cached process > run_sourmash_kmerize_sample (filter test)
+Jun-28 18:15:42.901 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [d1/677727] Cached process > run_strainge_kmerize_sample (filter test)
+Jun-28 18:15:42.902 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [1a/2197fc] Cached process > run_kraken (filter test)
+Jun-28 18:15:42.914 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [d3/a9a05a] Cached process > run_strainscan (filter test)
+Jun-28 18:15:42.987 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [eb/e9ec29] Cached process > run_sourmash (filter test)
+Jun-28 18:15:43.002 [Actor Thread 6] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jun-28 18:15:43.035 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [ef/204432] Cached process > run_strainge (filter test)
+Jun-28 18:15:43.039 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [20/416d3c] Cached process > run_lintax (filter test)
+Jun-28 18:15:43.132 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-28 18:15:43.134 [Task submitter] INFO  nextflow.Session - [dd/4bb14b] Submitted process > run_global_report (1)
+Jun-28 18:15:47.928 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: run_global_report (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/dd/4bb14b6928a4acc9c8c9cbc58f1d9a]
+Jun-28 18:15:47.929 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jun-28 18:15:47.957 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-28 18:15:47.958 [Task submitter] INFO  nextflow.Session - [0c/f11d7b] Submitted process > combine_summaries
+Jun-28 18:15:48.480 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: combine_summaries; status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/0c/f11d7bc0fbfcaa2cf5ca1cace4ac1d]
+Jun-28 18:15:48.485 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-28 18:15:48.581 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-28 18:15:48.581 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-28 18:15:48.586 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jun-28 18:15:48.587 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jun-28 18:15:48.597 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=7; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=5.2s; failedDuration=0ms; cachedDuration=1m 49s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jun-28 18:15:48.756 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-28 18:15:48.777 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jun-28 18:15:48.778 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
