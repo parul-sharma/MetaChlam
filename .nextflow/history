@@ -42,3 +42,4 @@
 2024-06-28 00:14:30	1m 22s	dreamy_avogadro	ERR	7bc3395e63c35616b2fe5b6f5c072cd7	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf
 2024-06-28 00:17:47	6.5s	clever_kirch	ERR	80aac6ce6123ff213794570a71acfc0c	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
 2024-06-28 00:19:47	47.5s	determined_swirles	OK	80aac6ce6123ff213794570a71acfc0c	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
+2024-06-28 01:46:45	-	silly_rubens	-	da9c42a8a4cde1907bdb9c47c24f6e94	3d320646-e57b-4a89-a608-48de190d21d1	nextflow run main.nf -resume
