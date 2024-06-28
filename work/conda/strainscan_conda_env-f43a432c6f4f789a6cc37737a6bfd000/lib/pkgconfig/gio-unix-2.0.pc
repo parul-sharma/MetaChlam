@@ -1,9 +1,0 @@
-prefix=/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000
-libdir=${prefix}/lib
-includedir=${prefix}/include
-
-Name: GIO unix specific APIs
-Description: unix specific headers for glib I/O library
-Version: 2.66.3
-Requires: gobject-2.0, gio-2.0
-Cflags: -I${includedir}/gio-unix-2.0

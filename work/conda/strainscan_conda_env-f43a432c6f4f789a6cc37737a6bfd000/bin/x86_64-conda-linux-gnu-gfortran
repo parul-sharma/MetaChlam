@@ -1,2 +1,0 @@
-#!/bin/sh
-/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000/bin/x86_64-conda-linux-gnu-gfortran.bin -specs=/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000/bin/../lib/gcc/x86_64-conda-linux-gnu/7.5.0/specs "$@"

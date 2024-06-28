@@ -1,5 +1,0 @@
-#!/workspaces/MetaChlam/work/conda/sourmash_conda_env-8c192cd752fe7a2fbe9d89166066fb0c/bin/python3.12
-
-from idlelib.pyshell import main
-if __name__ == '__main__':
-    main()

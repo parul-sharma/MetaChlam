@@ -1,9 +1,0 @@
-prefix=/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000
-libdir=${prefix}/lib64
-includedir=${prefix}/include
-
-Name: GNU FriBidi
-Description: Unicode Bidirectional Algorithm Library
-Version: 1.0.10
-Libs: -L${libdir} -lfribidi
-Cflags: -I${includedir}/fribidi

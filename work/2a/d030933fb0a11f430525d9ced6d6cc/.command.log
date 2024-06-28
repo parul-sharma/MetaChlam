@@ -1,22 +1,0 @@
-[K
-== This is sourmash version 4.8.9. ==
-[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
-
-[Kselect query k=31 automatically.
-[Kloaded query: test... (k=31, DNA)
-[Kloading from '/workspaces/MetaChlam/databases/sourmash_db.zip'...[K--
-[Kloaded 113 total signatures from 1 locations.
-[Kafter selecting signatures compatible with search, 113 remain.
-[KStarting prefetch sweep across databases.
-[KPrefetch found 88 signatures with overlap >= 50.0 kbp.
-[KDoing gather to generate minimum metagenome cover.
-
-
-overlap     p_query p_match
----------   ------- -------
-1.0 Mbp        6.4%   95.8%    ...pshar31/ANI_comparisons/CT_subset_removing_in_vitro_Strains/only_chromosome/GCF_001183765.1_ASM118376v1_genomic.fna
-[Kfound less than 50.0 kbp in common. => exiting
-
-found 1 matches total;
-the recovered matches hit 6.4% of the query k-mers (unweighted).
-

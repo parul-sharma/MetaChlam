@@ -1,12 +1,0 @@
-[K
-== This is sourmash version 4.8.9. ==
-[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
-
-[Kcomputing signatures for files: test_R1.fastq, test_R2.fastq
-[KComputing a total of 1 signature(s) for each input.
-[K... reading sequences from test_R1.fastq
-[K... test_R1.fastq 10000[K... test_R1.fastq 20000[K... test_R1.fastq 30000[K... test_R1.fastq 40000[K... test_R1.fastq 50000[K... test_R1.fastq 60000[K... test_R1.fastq 70000[K... test_R1.fastq 80000[K... test_R1.fastq 90000[K... test_R1.fastq 100000[K... test_R1.fastq 100245 sequences
-[K... reading sequences from test_R2.fastq
-[K... test_R2.fastq 10000[K... test_R2.fastq 20000[K... test_R2.fastq 30000[K... test_R2.fastq 40000[K... test_R2.fastq 50000[K... test_R2.fastq 60000[K... test_R2.fastq 70000[K... test_R2.fastq 80000[K... test_R2.fastq 90000[K... test_R2.fastq 100000[K... test_R2.fastq 100245 sequences
-[Kcalculated 1 signature for 200490 sequences taken from 2 files
-[Ksaved 1 signature(s) to 'test.zip'
