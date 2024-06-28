@@ -1,4 +1,4 @@
-name: sourmash
+name: sourmash_conda_env
 channels:
   - conda-forge
   - bioconda

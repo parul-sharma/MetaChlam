@@ -97,10 +97,50 @@ process run_lintax {
     """
 }
 
+process run_strainge_kmerize_sample {
+    publishDir "${params.outdir}/${sample_id}", mode: 'copy'
+    conda 'envs/strainge_conda_env.yml'
+
+    tag "filter $sample_id" 
+
+    input: 
+    tuple val(sample_id), path(reads)
+    
+    output:
+    tuple val(sample_id), path("${sample_id}.hdf5"), emit: sample_hdf5
+
+    script:
+    """
+        mkdir -p ${params.outdir}/${sample_id}
+        straingst kmerize -k 23 -o ${sample_id}.hdf5 ${reads[0]} ${reads[1]} 
+    """
+}
+
+process run_strainge {
+    publishDir "${params.outdir}/${sample_id}", mode: 'copy'
+    conda 'envs/strainge_conda_env.yml'
+
+    tag "filter $sample_id" 
+
+    input: 
+    tuple val(sample_id), path(sample_hdf5)
+    
+    output:
+    tuple val(sample_id), path("${sample_id}.strainge.txt")
+
+    script:
+    """
+        mkdir -p ${params.outdir}/${sample_id}
+        straingst run -o ${sample_id}.strainge.txt $baseDir/databases/pan-genome-db_99.hdf5 ${sample_hdf5}
+    """
+}
+
 //workflow
 workflow {
     reads = Channel.fromFilePairs(params.reads, checkIfExists: true)
     strainscan_out_ch = run_strainscan(reads)
     kraken_out_ch = run_kraken(reads)
     lintax_out_ch = run_lintax(kraken_out_ch.kraken_output, kraken_out_ch.kraken_report)
+    strainge_kmer_out_ch = run_strainge_kmerize_sample(reads)
+    strainge_out_ch = run_strainge(strainge_kmer_out_ch.sample_hdf5)
 }
