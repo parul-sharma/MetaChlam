@@ -5,6 +5,7 @@
 import pandas as pd
 import os
 import argparse
+from pathlib import Path
 
 # Function to extract relevant data from strainge results
 def extract_strainge(file):
@@ -47,7 +48,7 @@ def extract_strainscan(file):
         print(f"Error reading strainscan file {file}: {e}")
         return pd.DataFrame()
 
-def main(strainge_file, linreport_file, sourmash_file, strainscan_file, sample_id, output_file):
+def main(strainge_file, linreport_file, sourmash_file, strainscan_dir, sample_id, output_file):
 
     # Initialize variables to store extracted data
     strainge_data = pd.DataFrame()
@@ -68,7 +69,8 @@ def main(strainge_file, linreport_file, sourmash_file, strainscan_file, sample_i
         sourmash_data = extract_sourmash(sourmash_file)
 
     # Extract data from strainscan file
-    if strainscan_file:
+    if strainscan_dir:
+        strainscan_file=Path(strainscan_dir) / 'final_report.txt'
         strainscan_data = extract_strainscan(strainscan_file)
         
     # Create a dictionary to store data for this sample

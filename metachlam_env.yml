@@ -5,3 +5,4 @@ dependencies:
   - nextflow
   - python=3.7.3
   - pandas=1.0.1
+  - pathlib
