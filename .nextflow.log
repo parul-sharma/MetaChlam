@@ -1,0 +1,125 @@
+Jul-16 14:25:39.125 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jul-16 14:25:39.331 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jul-16 14:25:39.378 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jul-16 14:25:39.393 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-16 14:25:39.394 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-16 14:25:39.399 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jul-16 14:25:39.414 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-16 14:25:39.445 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/MetaChlam/nextflow.config
+Jul-16 14:25:39.451 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/MetaChlam/nextflow.config
+Jul-16 14:25:39.494 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jul-16 14:25:39.499 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4a68135e] - activable => nextflow.secret.LocalSecretsProvider@4a68135e
+Jul-16 14:25:39.509 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-16 14:25:40.086 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-16 14:25:40.148 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [sleepy_borg] DSL2 - revision: dffaf66920
+Jul-16 14:25:40.151 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-16 14:25:40.151 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-16 14:25:40.243 [main] DEBUG nextflow.Session - Session UUID: 5b188195-772f-4713-b7f6-58094c43bb20
+Jul-16 14:25:40.243 [main] DEBUG nextflow.Session - Run name: sleepy_borg
+Jul-16 14:25:40.244 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jul-16 14:25:40.255 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-16 14:25:40.262 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-16 14:25:40.379 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC 
+  System: Linux 6.5.0-1022-azure
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 12120@codespaces-40befa [127.0.0.1]
+  CPUs: 4 - Mem: 15.6 GB (4.7 GB) - Swap: 0 (0)
+Jul-16 14:25:40.418 [main] DEBUG nextflow.Session - Work-dir: /workspaces/MetaChlam/work [ext2/ext3]
+Jul-16 14:25:40.461 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-16 14:25:40.473 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-16 14:25:40.539 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-16 14:25:40.554 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jul-16 14:25:40.728 [main] DEBUG nextflow.Session - Session start
+Jul-16 14:25:41.751 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-16 14:25:41.771 [main] INFO  nextflow.Nextflow - 
+MetaChlam (version 1)
+===================================
+reads        : /workspaces/MetaChlam/sample/*_R{1,2}.fastq
+outdir       : /workspaces/MetaChlam/output
+
+Jul-16 14:25:41.990 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:41.991 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:41.998 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-16 14:25:42.005 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jul-16 14:25:42.008 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-16 14:25:42.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.095 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.107 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.107 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.118 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.118 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.128 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.128 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.137 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.138 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.157 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.157 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.182 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.183 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.205 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-16 14:25:42.206 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-16 14:25:42.210 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: run_global_report, run_strainge_kmerize_sample, run_sourmash, run_strainge, combine_summaries, run_kraken, run_strainscan, run_lintax, run_sourmash_kmerize_sample
+Jul-16 14:25:42.211 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Jul-16 14:25:42.219 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_strainscan
+Jul-16 14:25:42.220 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_kraken
+Jul-16 14:25:42.218 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/MetaChlam/sample/; pattern: *_R{1,2}.fastq; options: [checkIfExists:true]
+Jul-16 14:25:42.223 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_lintax
+Jul-16 14:25:42.223 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_strainge_kmerize_sample
+Jul-16 14:25:42.228 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_strainge
+Jul-16 14:25:42.229 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_sourmash_kmerize_sample
+Jul-16 14:25:42.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_sourmash
+Jul-16 14:25:42.231 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_global_report
+Jul-16 14:25:42.233 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > combine_summaries
+Jul-16 14:25:42.236 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_dcef0cf35213e3f9: /workspaces/MetaChlam/main.nf
+Jul-16 14:25:42.236 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-16 14:25:42.236 [main] DEBUG nextflow.Session - Session await
+Jul-16 14:25:42.483 [Actor Thread 12] INFO  nextflow.conda.CondaCache - Creating env using conda: envs/strainge_conda_env.yml [cache /workspaces/MetaChlam/work/conda/strainge_conda_env-6b7d15ae251354c1d471ff9b7274ac18]
+Jul-16 14:25:42.484 [Actor Thread 9] INFO  nextflow.conda.CondaCache - Creating env using conda: envs/sourmash_conda_env.yml [cache /workspaces/MetaChlam/work/conda/sourmash_conda_env-8c192cd752fe7a2fbe9d89166066fb0c]
+Jul-16 14:25:42.484 [Actor Thread 5] INFO  nextflow.conda.CondaCache - Creating env using conda: envs/lintax_conda_env.yml [cache /workspaces/MetaChlam/work/conda/lintax_conda_env-ef1e29be1e2552c74634e97d66e45cfd]
+Jul-16 14:25:42.485 [Actor Thread 11] INFO  nextflow.conda.CondaCache - Creating env using conda: envs/strainscan_conda_env.yml [cache /workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000]
+Jul-16 14:26:46.605 [Actor Thread 12] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=envs/strainge_conda_env.yml path=/workspaces/MetaChlam/work/conda/strainge_conda_env-6b7d15ae251354c1d471ff9b7274ac18
+Jul-16 14:26:46.800 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:26:46.818 [Task submitter] INFO  nextflow.Session - [3c/0ccc9c] Submitted process > run_strainge_kmerize_sample (filter test)
+Jul-16 14:26:58.780 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: run_strainge_kmerize_sample (filter test); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/3c/0ccc9c9a7c293af6393cc7640bede1]
+Jul-16 14:26:58.782 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-16 14:26:58.860 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:26:58.873 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-16 14:26:58.873 [Task submitter] INFO  nextflow.Session - [72/158240] Submitted process > run_strainge (filter test)
+Jul-16 14:27:04.421 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: run_strainge (filter test); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/72/15824058b5e332cb8a0ad959c34669]
+Jul-16 14:27:52.969 [Actor Thread 5] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=envs/lintax_conda_env.yml path=/workspaces/MetaChlam/work/conda/lintax_conda_env-ef1e29be1e2552c74634e97d66e45cfd
+Jul-16 14:27:53.024 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:27:53.029 [Task submitter] INFO  nextflow.Session - [99/1f1d21] Submitted process > run_kraken (filter test)
+Jul-16 14:27:55.307 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: run_kraken (filter test); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/99/1f1d2148aae141f7e47afd83505be5]
+Jul-16 14:27:55.346 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:27:55.354 [Task submitter] INFO  nextflow.Session - [b5/8023c7] Submitted process > run_lintax (filter test)
+Jul-16 14:27:56.778 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: run_lintax (filter test); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/b5/8023c711c5e0437533c66350110649]
+Jul-16 14:28:56.345 [Actor Thread 11] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=envs/strainscan_conda_env.yml path=/workspaces/MetaChlam/work/conda/strainscan_conda_env-f43a432c6f4f789a6cc37737a6bfd000
+Jul-16 14:28:56.358 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:28:56.360 [Task submitter] INFO  nextflow.Session - [c6/676642] Submitted process > run_strainscan (filter test)
+Jul-16 14:29:05.819 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: run_strainscan (filter test); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/c6/67664276818a1b479f55e8cb6b39f5]
+Jul-16 14:29:35.138 [Actor Thread 9] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=envs/sourmash_conda_env.yml path=/workspaces/MetaChlam/work/conda/sourmash_conda_env-8c192cd752fe7a2fbe9d89166066fb0c
+Jul-16 14:29:35.146 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:29:35.146 [Task submitter] INFO  nextflow.Session - [23/9a62b7] Submitted process > run_sourmash_kmerize_sample (filter test)
+Jul-16 14:29:38.418 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: run_sourmash_kmerize_sample (filter test); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/23/9a62b7dd701b30a97754af05397b21]
+Jul-16 14:29:38.439 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:29:38.440 [Task submitter] INFO  nextflow.Session - [d4/998b11] Submitted process > run_sourmash (filter test)
+Jul-16 14:29:40.229 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: run_sourmash (filter test); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/d4/998b11e28892f365c48681527c7ed4]
+Jul-16 14:29:40.243 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:29:40.243 [Task submitter] INFO  nextflow.Session - [30/abb437] Submitted process > run_global_report (1)
+Jul-16 14:29:42.268 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: run_global_report (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/30/abb437d2f4a50e72865a13047167c6]
+Jul-16 14:29:42.283 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-16 14:29:42.284 [Task submitter] INFO  nextflow.Session - [12/470ad1] Submitted process > combine_summaries
+Jul-16 14:29:42.672 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: combine_summaries; status: COMPLETED; exit: 0; error: -; workDir: /workspaces/MetaChlam/work/12/470ad1791db0c06fb15ad643fa98e1]
+Jul-16 14:29:42.675 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-16 14:29:42.773 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-16 14:29:42.773 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-16 14:29:42.779 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-16 14:29:42.780 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jul-16 14:29:42.817 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=9; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=37.5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-16 14:29:42.863 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-16 14:29:42.890 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-16 14:29:42.891 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

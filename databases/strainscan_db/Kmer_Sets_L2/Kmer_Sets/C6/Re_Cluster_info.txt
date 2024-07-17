@@ -1,2 +1,6 @@
-1	A_ref	44756	1	A_ref
-2	GCF_000026925	45132	1	GCF_000026925
+1	Ocular__A__A_HAR-13	86546	1	Ocular__A__A_HAR-13
+2	Ocular____SB013112	85592	1	Ocular____SB013112
+3	Ocular____SB006930	85418	1	Ocular____SB006930
+4	Ocular____SB008107	61910	1	Ocular____SB008107
+5	Ocular____SB013321	84482	1	Ocular____SB013321
+6	Ocular__Ba__Ba_ref	85976	1	Ocular__Ba__Ba_ref
