@@ -61,6 +61,8 @@ process run_kraken {
     output:
     tuple val(sample_id), path("${sample_id}.koutput"), emit: kraken_output
     tuple val(sample_id), path("${sample_id}.kreport"), emit: kraken_report
+    tuple val(sample_id), path("${sample_id}.classified*.fastq"), emit: classified
+    tuple val(sample_id), path("${sample_id}.log"), emit: kraken_log
 
     script:
     """
@@ -68,10 +70,12 @@ process run_kraken {
         kraken2 --db $baseDir/databases/LINtax_db --paired ${reads[0]} ${reads[1]} \
         --minimum-hit-groups 4 \
         --confidence 0.45 \
+        --classified-out ${sample_id}.classified#.fastq \
         --output ${sample_id}.koutput \
-        --report ${sample_id}.kreport
+        --report ${sample_id}.kreport >> ${sample_id}.log 2>&1
     """
 }
+
 
 process run_lintax {
     publishDir "${params.outdir}/${sample_id}", mode: 'copy'
@@ -174,52 +178,62 @@ process run_sourmash {
     """
 }
 
+// Ensure all processes synchronize outputs correctly
 process run_global_report {
     publishDir "${params.outdir}/${sample_id}", mode: 'copy'
     
     input: 
-    tuple val(sample_id), path(strainscan_out)
-    tuple val(sample_id), path(strainge_out)
-    tuple val(sample_id), path(lintax_out)
-    tuple val(sample_id), path(sourmash_out)
+    tuple val(sample_id),  path(kraken_log), path(strainscan_out), path(strainge_out), path(lintax_out), path(sourmash_out)
+
+   // tuple val(sample_id), path(strainscan_out)
+   // tuple val(sample_id), path(strainge_out)
+   // tuple val(sample_id), path(lintax_out)
+   // tuple val(sample_id), path(sourmash_out)
     
     output:
     path("${sample_id}_summary.csv"), emit: sample_summary
 
     script:
     """
-        python $baseDir/bin/global_report.py -st ${strainge_out} \
+        mkdir -p ${params.outdir}/${sample_id}
+        python $baseDir/bin/global_report.py -kl ${kraken_log} -st ${strainge_out} \
         -lr ${lintax_out} -sc ${strainscan_out} \
         -sm ${sourmash_out} -s ${sample_id} \
         -o ${sample_id}_summary.csv
     """
 }
 
+// Combine summaries process
 process combine_summaries {
     publishDir "${params.outdir}", mode: 'copy'
 
     input:
-    path "*_summary.csv"
+    path collected_summaries
 
     output:
-    path("Combined_summary.csv")
+    path "Combined_summary.csv"
 
     script:
     """
-        python -c "
+    python -c "
 import pandas as pd
-import glob
-
-summary_files = glob.glob('*_summary.csv')
+summary_files = ['${collected_summaries.join("','")}']
 combined_df = pd.concat([pd.read_csv(f) for f in summary_files], ignore_index=True)
+
+# Ensure correct sorting by 'sample_id' (or replace 'sample_id' with your relevant column name)
+if 'sample_id' in combined_df.columns:
+    combined_df = combined_df.sort_values(by='sample_id')
+
 combined_df.to_csv('Combined_summary.csv', index=False)
-        "
+    "
     """
 }
 
 //workflow
 workflow {
     reads = Channel.fromFilePairs(params.reads, checkIfExists: true)
+    
+    // Define channels for each process
     strainscan_out_ch = run_strainscan(reads)
     kraken_out_ch = run_kraken(reads)
     lintax_out_ch = run_lintax(kraken_out_ch.kraken_output, kraken_out_ch.kraken_report)
@@ -227,6 +241,20 @@ workflow {
     strainge_out_ch = run_strainge(strainge_kmer_out_ch.sample_hdf5)
     sourmash_kmer_out_ch = run_sourmash_kmerize_sample(reads)
     sourmash_out_ch = run_sourmash(sourmash_kmer_out_ch.sample_sig)
-    sample_summary_ch = run_global_report(strainscan_out_ch.strainscan_out, strainge_out_ch.strainge_out, lintax_out_ch.lintax_out, sourmash_out_ch.sourmash_out) | collect | combine_summaries
-   
+
+   // Use `join` to join all the channels based on `sample_id`
+    global_report_inputs = kraken_out_ch.kraken_log
+                            .join(strainscan_out_ch.strainscan_out)
+                            .join(strainge_out_ch.strainge_out)
+                            .join(lintax_out_ch.lintax_out)
+                            .join(sourmash_out_ch.sourmash_out)
+
+    sample_summary_ch = run_global_report(global_report_inputs)
+
+    // Collect and combine all summary outputs
+    sample_summary_ch
+        .collect()
+        .set { collected_summaries }
+
+    combine_summaries(collected_summaries)
 }

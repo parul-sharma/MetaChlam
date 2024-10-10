@@ -1,11 +1,14 @@
 #!/bin/python
 
-'''USAGE: python global_report.py -st /path/to/strainge_file -lr /path/to/linreport_file -sm /path/to/sourmash_file -sc /path/to/strainscan_file -s sample_id -o /path/to/final_summary_report.csv'''
+'''USAGE: python global_report.py -kl /path/to/kraken_log -st /path/to/strainge_file -lr /path/to/linreport_file -sm /path/to/sourmash_file -sc /path/to/strainscan_file -s sample_id -o /path/to/final_summary_rep
+ort.csv'''
 
 import pandas as pd
 import os
 import argparse
 from pathlib import Path
+import re
+import numpy as np
 
 # Function to extract relevant data from strainge results
 def extract_strainge(file):
@@ -21,7 +24,8 @@ def extract_strainge(file):
 def extract_linreport(file):
     try:
         linreport_df = pd.read_csv(file, sep=',')
-        linreport_filtered = linreport_df[linreport_df['Percentage_assigned_reads'] != 0]
+        linreport_filtered = linreport_df[(linreport_df['Percentage_assigned_reads'] > 0) & linreport_df['Percentage_assigned_reads'].notna()]
+               
         linreport_data = linreport_filtered.loc[:, ['LINgroup_Name', 'Assigned_reads']]
         return linreport_data
     except Exception as e:
@@ -48,52 +52,58 @@ def extract_strainscan(file):
         print(f"Error reading strainscan file {file}: {e}")
         return pd.DataFrame()
 
-def main(strainge_file, linreport_file, sourmash_file, strainscan_dir, sample_id, output_file):
-
-    # Initialize variables to store extracted data
-    strainge_data = pd.DataFrame()
-    linreport_data = pd.DataFrame()
-    sourmash_data = pd.DataFrame()
-    strainscan_data = pd.DataFrame()
+# Function to extract classified reads from Kraken log
+def extract_kraken_classified(log_file):
+    with open(log_file, 'r') as file:
+        log_content = file.read()
     
-    # Extract data from strainge file
-    if strainge_file:
-        strainge_data = extract_strainge(strainge_file)
+    # Use regular expressions to find the number and percentage of classified reads
+    classified_pattern = re.compile(r'^\s*(\d+)\s+sequences classified \(([\d\.]+)%\)', re.MULTILINE)
 
-    # Extract data from LINreport file
-    if linreport_file:
-        linreport_data = extract_linreport(linreport_file)
+    classified_match = classified_pattern.search(log_content)
 
-    # Extract data from sourmash file
-    if sourmash_file:
-        sourmash_data = extract_sourmash(sourmash_file)
+    if classified_match:
+        classified_reads = classified_match.group(1)
+        classified_percentage = classified_match.group(2)
 
-    # Extract data from strainscan file
-    if strainscan_dir:
-        strainscan_file=Path(strainscan_dir) / 'final_report.txt'
-        strainscan_data = extract_strainscan(strainscan_file)
-        
-    # Create a dictionary to store data for this sample
-    sample_summary = {'Sample': sample_id}
-        
-    # Add data from each tool to the sample summary dictionary
-    if not strainge_data.empty:
-        sample_summary.update(strainge_data.iloc[0].to_dict())
-    if not linreport_data.empty:
-        sample_summary.update(linreport_data.iloc[0].to_dict())
-    if not sourmash_data.empty:
-        sample_summary.update(sourmash_data.iloc[0].to_dict())
-    if not strainscan_data.empty:
-        sample_summary.update(strainscan_data.iloc[0].to_dict())
+        return {
+            "classified_reads": classified_reads,
+            "classified_percentage": classified_percentage
+        }
+    else:
+        raise ValueError("Unable to find classified and unclassified read counts in the log file.")
 
-    # Convert dictionary to DataFrame
-    summary_df = pd.DataFrame([sample_summary])  # Wrap sample_summary in a list
+def main(kraken_file, strainge_file, linreport_file, sourmash_file, strainscan_dir, sample_id, output_file):
+    # Initialize variables to store extracted data
+    strainge_data = extract_strainge(strainge_file)
+    linreport_data = extract_linreport(linreport_file)
+    sourmash_data = extract_sourmash(sourmash_file)
+    strainscan_data = extract_strainscan(Path(strainscan_dir) / 'final_report.txt')
+
+    # Extract classified reads from kraken report file
+    kraken_data = pd.DataFrame()
+    if kraken_file:
+        try:
+            kraken_results = extract_kraken_classified(kraken_file)
+            kraken_data = pd.DataFrame({
+                'Classified_Reads': [kraken_results['classified_reads']],
+                'Classified_Percentage': [kraken_results['classified_percentage']]
+            }, dtype=str)
+        except ValueError as e:
+            print(e)
+
+    # Create a dataframe to store Sample ID 
+    sample_summary = pd.DataFrame({'Sample': [sample_id]})
+
+    # Combine data from each tool
+    combined_data = pd.concat([sample_summary, kraken_data, strainge_data, linreport_data, sourmash_data, strainscan_data], axis=1)
 
     # Save the final summary report to a CSV file
-    summary_df.to_csv(output_file, index=False)
+    combined_data.to_csv(output_file, index=False)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Summarize results from multiple tools into a single report.")
+    parser.add_argument('-kl', '--kraken_log', required=False, help="Path to the kraken log file.")
     parser.add_argument('-st', '--strainge', required=False, help="Path to the strainge results file.")
     parser.add_argument('-lr', '--linreport', required=False, help="Path to the LIN report file.")
     parser.add_argument('-sm', '--sourmash', required=False, help="Path to the sourmash results file.")
@@ -103,4 +113,5 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    main(args.strainge, args.linreport, args.sourmash, args.strainscan, args.sample, args.output)
+    main(args.kraken_log, args.strainge, args.linreport, args.sourmash, args.strainscan, args.sample, args.output)
+
