@@ -1,2 +1,2 @@
-1	NP-UA__K__SQ19	782	1	NP-UA__K__SQ19
-2	NP-UA__K__SQ15	702	1	NP-UA__K__SQ15
+1	P-UA__clade4__70	4172	1	P-UA__clade4__70
+2	P-UA__clade4__70s	288	1	P-UA__clade4__70s

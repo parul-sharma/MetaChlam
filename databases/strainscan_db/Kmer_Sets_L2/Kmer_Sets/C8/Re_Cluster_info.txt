@@ -1,4 +1,2 @@
-1	Ocular__A__A2497	32160	1	Ocular__A__A2497
-2	Ocular__B__B_TZ1A828_OT	32394	1	Ocular__B__B_TZ1A828_OT
-3	Ocular__A__A_363	31848	1	Ocular__A__A_363
-4	Ocular__A__A_7249	31986	1	Ocular__A__A_7249
+1	Ocular__clade2__Jali20	45132	1	Ocular__clade2__Jali20
+2	Ocular__clade2__A_ref	44756	1	Ocular__clade2__A_ref

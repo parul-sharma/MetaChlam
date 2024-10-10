@@ -1,6 +1,4 @@
-1	Ocular__A__A_HAR-13	86546	1	Ocular__A__A_HAR-13
-2	Ocular____SB013112	85592	1	Ocular____SB013112
-3	Ocular____SB006930	85418	1	Ocular____SB006930
-4	Ocular____SB008107	61910	1	Ocular____SB008107
-5	Ocular____SB013321	84482	1	Ocular____SB013321
-6	Ocular__Ba__Ba_ref	85976	1	Ocular__Ba__Ba_ref
+1	Ocular__clade2__SB013112	53900	1	Ocular__clade2__SB013112
+2	Ocular__clade2__SB006930	53678	1	Ocular__clade2__SB006930
+3	Ocular__clade2__Ba_ref	54428	1	Ocular__clade2__Ba_ref
+4	Ocular__clade2__A_HAR-13	54800	1	Ocular__clade2__A_HAR-13

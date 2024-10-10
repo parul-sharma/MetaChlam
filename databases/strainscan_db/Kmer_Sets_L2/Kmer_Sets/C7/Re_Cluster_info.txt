@@ -1,3 +1,4 @@
-1	Ocular__B__B_ref	7408	1	Ocular__B__B_ref
-2	Ocular__C__C_ref	6454	1	Ocular__C__C_ref
-3	Ocular__C__C_TW-3	6130	1	Ocular__C__C_TW-3
+1	Ocular__clade1__A_363	31848	1	Ocular__clade1__A_363
+2	Ocular__clade1__A_7249	31950	1	Ocular__clade1__A_7249
+3	Ocular__clade1__A2497	32124	1	Ocular__clade1__A2497
+4	Ocular__clade1__B_TZ1A828_OT	32358	1	Ocular__clade1__B_TZ1A828_OT

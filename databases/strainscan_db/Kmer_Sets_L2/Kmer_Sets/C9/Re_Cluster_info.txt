@@ -1,2 +1,3 @@
-1	Ocular__A__A_ref	44756	1	Ocular__A__A_ref
-2	Ocular__B__Jali20	45132	1	Ocular__B__Jali20
+1	NP-UA__clade3__G_9301	2846	1	NP-UA__clade3__G_9301
+2	NP-UA__clade3__G_9768	2844	1	NP-UA__clade3__G_9768
+3	NP-UA__clade3__G_11074	3534	1	NP-UA__clade3__G_11074
