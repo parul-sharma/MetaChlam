@@ -69,10 +69,13 @@ process run_kraken {
         mkdir -p ${params.outdir}/${sample_id}
         kraken2 --db $baseDir/databases/LINtax_db --paired ${reads[0]} ${reads[1]} \
         --minimum-hit-groups 4 \
+        --classified-out ${sample_id}.classified#.fastq >> ${sample_id}.log 2>&1
+
+        kraken2 --db $baseDir/databases/LINtax_db --paired ${reads[0]} ${reads[1]} \
+        --minimum-hit-groups 4 \
         --confidence 0.45 \
-        --classified-out ${sample_id}.classified#.fastq \
         --output ${sample_id}.koutput \
-        --report ${sample_id}.kreport >> ${sample_id}.log 2>&1
+        --report ${sample_id}.kreport
     """
 }
 
