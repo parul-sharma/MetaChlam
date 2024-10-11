@@ -1,0 +1,9 @@
+name: sra_tools_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - sra-tools
+  - python=3.11
+  - pandas
