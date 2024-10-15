@@ -36,9 +36,11 @@ This pipeline relies on several bioinformatics tools and packages:
    nextflow run main.nf
    ```
 
-### Directory structure for running the MetaChLam pipeline:
-MetaChlam /
- ├── bin /
+### Directory structure for running the MetaChlam pipeline:
+
+```bash
+MetaChlam/
+ ├── bin/
  │    ├── global_report.py           # Script to generate the global report
  │    ├── lingroups.txt              # LIN group taxonomy file
  │    └── report-lin.py              # Script to generate LIN reports
@@ -52,12 +54,13 @@ MetaChlam /
  │    ├── lintax_conda_env.yml       # Conda environment for LINtax & Kraken2
  │    ├── strainge_conda_env.yml     # Conda environment for StrainGST
  │    └── sourmash_conda_env.yml     # Conda environment for Sourmash
- ├── main.nf                        # Main Nextflow pipeline
- ├── nextflow.config                # Nextflow configuration file
- ├── output/                        # Directory where all outputs are saved
+ ├── main.nf                         # Main Nextflow pipeline
+ ├── nextflow.config                 # Nextflow configuration file
+ ├── output/                         # Directory where all outputs are saved
  │    └── (Generated output files)
- └── sample/                        # Directory where all inputs are saved
+ └── sample/                         # Directory where all inputs are saved
       ├── sample_R1.fastq            # Example input read (R1)
       └── sample_R2.fastq            # Example input read (R2)
+
 
 
