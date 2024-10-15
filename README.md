@@ -37,8 +37,8 @@ This pipeline relies on several bioinformatics tools and packages:
    ```
 
 ### Directory structure for running the MetaChLam pipeline:
-MetaChlam/
- ├── bin/
+MetaChlam /
+ ├── bin /
  │    ├── global_report.py           # Script to generate the global report
  │    ├── lingroups.txt              # LIN group taxonomy file
  │    └── report-lin.py              # Script to generate LIN reports
