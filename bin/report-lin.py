@@ -74,18 +74,18 @@ def main():
 
     lin_file = pd.read_csv(args.lin_file, sep='\t')
     data = pd.read_csv(args.data_file, sep='\t')
-    data['taxid_LIN'] = data['taxid_LIN'].str.replace("[\]\[]", '')
-    data['parent_LIN'] = data['parent_LIN'].str.replace("[\]\[]", '')
+    data['taxid_LIN'] = data['taxid_LIN'].str.replace("[\]\[]", '', regex=True)
+    data['parent_LIN'] = data['parent_LIN'].str.replace("[\]\[]", '', regex=True)
 
     in_file = pd.read_csv(args.in_file_report, sep='\t', header=None, index_col=False)
     in_output = pd.read_csv(args.in_file_output, sep='\t', header=None, index_col=False)
 
     out_file = lin_file.copy()
-    out_file['Assigned_reads'] = ''
-    out_file['Percentage_assigned_reads'] = ''
-    out_file['Unique_Assigned_reads'] = ''
-    out_file['Percentage_unique_assigned_reads'] = ''
-    out_file['Total_reads_length'] = ''
+    out_file['Assigned_reads'] = 0
+    out_file['Percentage_assigned_reads'] = 0.0
+    out_file['Unique_Assigned_reads'] = 0
+    out_file['Percentage_unique_assigned_reads'] = 0.0
+    out_file['Total_reads_length'] = 0
 
     temp_taxid = find_taxid_of_lingroup(lin_file.loc[0, 'LINgroup_prefix'], data)
     total_reads = total_reads_count(temp_taxid, in_file)

@@ -1,0 +1,39 @@
+
+# ========================================
+# MetaChlam local data/results
+# ========================================
+
+# Input/sample data
+sample/
+samples/
+pebblescout_sra/
+
+# Pipeline results
+output/
+outputs/
+old_output/
+simulation_output/
+
+# Development / analysis directories
+ompAtyping/
+
+# Nextflow runtime files
+work/
+.nextflow/
+.nextflow.log*
+.nextflow.pid
+
+# Common sequencing/data files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Common large result files
+*.bam
+*.bai
+*.sam
+
+# OS/editor junk
+.DS_Store
+*.swp
