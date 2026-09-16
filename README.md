@@ -4,7 +4,7 @@
 
 📄 **Preprint:** *Detecting and typing Chlamydia trachomatis strains in metagenomes using the MetaChlam pipeline*  
 Sharma P, Dean D, Read TD. bioRxiv (2026).  
-DOI: https://doi.org/10.64898/2026.08.18.745514 :contentReference[oaicite:0]{index=0}
+DOI: https://doi.org/10.64898/2026.08.18.745514 
 
 
 MetaChlam is a **Nextflow-based** bioinformatics pipeline for detecting and characterizing *Chlamydia trachomatis* directly from metagenomic sequencing data. Rather than relying on a single classifier, MetaChlam integrates multiple complementary strain typing approaches into a single automated workflow and produces a consensus report summarizing strain assignments across multiple methods.
