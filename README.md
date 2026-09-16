@@ -1,66 +1,164 @@
 # MetaChlam
-## Metagenomics tool for strain level identification of Chlamydia trachomatis strains
-The MetaChlam pipeline is designed to classify and analyze metagenomic sequencing reads, specifically targeting Chlamydia trachomatis strains. The pipeline leverages multiple tools to process input reads, including StrainScan, LINtax, StrainGE, and Sourmash, and produces a combined summary report with results from each classifier.
+
+## Strain-level detection and typing of *Chlamydia trachomatis* from metagenomic sequencing data
+
+📄 **Preprint:** *Detecting and typing Chlamydia trachomatis strains in metagenomes using the MetaChlam pipeline*  
+Sharma P, Dean D, Read TD. bioRxiv (2026).  
+DOI: https://doi.org/10.64898/2026.08.18.745514 :contentReference[oaicite:0]{index=0}
+
+
+MetaChlam is a **Nextflow-based** bioinformatics pipeline for detecting and characterizing *Chlamydia trachomatis* directly from metagenomic sequencing data. Rather than relying on a single classifier, MetaChlam integrates multiple complementary strain typing approaches into a single automated workflow and produces a consensus report summarizing strain assignments across multiple methods.
+
+Although this repository is currently distributed with **custom databases for *Chlamydia trachomatis***, the workflow itself is modular and can be adapted for other bacterial pathogens by replacing the organism-specific reference databases used by each classification tool.
+
+---
+
+## Features
+
+- Nextflow-based reproducible workflow
+- Automatic Conda environment management
+- Supports paired-end Illumina metagenomic reads
+- Quick validation of input FASTQ files before analysis
+- Integrates four complementary strain typing methods:
+  - LINtax
+  - StrainScan
+  - StrainGE
+  - Sourmash
+- Generates a unified summary report combining results from all tools
+- Includes curated *C. trachomatis* reference databases
+- Easily adaptable to other bacterial species by substituting custom databases
+
+---
+
+## Pipeline overview
+
+```text
+Paired-end FASTQ files
+        │
+        ▼
+Input validation
+        │
+        ▼
+┌──────────────┬──────────────┬──────────────┬──────────────┐
+│   LINtax     │  StrainScan  │   StrainGE   │   Sourmash   │
+└──────────────┴──────────────┴──────────────┴──────────────┘
+        │
+        ▼
+Consensus integration
+        │
+        ▼
+Global MetaChlam report
+```
+
+---
 
 ## Requirements
-Nextflow: The workflow manager.
-Conda: Used to manage tool environments.
 
-## Tools & Dependencies (handled installed by the pipeline)
-This pipeline relies on several bioinformatics tools and packages:
-- StrainScan
-- Kraken2
-- LINtax
-- StrainGE
-- Sourmash
-- Python3
+- Linux
+- Nextflow (≥24 recommended)
+- Conda or Mamba
 
-## Conda Environments (will be installed during the first run)
-- strainscan_conda_env.yml: Environment for StrainScan.
-- lintax_conda_env.yml: Environment for Kraken2 and LINtax.
-- strainge_conda_env.yml: Environment for StrainGST.
-- sourmash_conda_env.yml: Environment for Sourmash.
+The individual software packages are installed automatically during the first execution.
 
-1. Install the pipeline
-   ```
-   git clone https://github.com/parul-sharma/MetaChlam.git
-   ```
+---
 
-2. Set up the environment
-   ```
-   conda env create -f metachlam_env.yml
-   ```
+## Installation
 
-3. For executing the pipeline run:
-   ```
-   nextflow run main.nf
-   ```
-
-### Directory structure for running the MetaChlam pipeline:
+Clone the repository:
 
 ```bash
+git clone https://github.com/parul-sharma/MetaChlam.git
+cd MetaChlam
+```
+
+Create the MetaChlam environment:
+
+```bash
+conda env create -f metachlam_env.yml
+conda activate metachlam
+```
+
+The remaining Conda environments required by individual tools will be created automatically when the pipeline is first run.
+
+---
+
+## Running MetaChlam
+
+Example:
+
+```bash
+nextflow run main.nf \
+    --reads "/path/to/*_{R1,R2}.fastq.gz" \
+    --outdir results
+```
+
+Cluster-specific execution settings can be modified in `nextflow.config`.
+
+---
+
+## Pipeline components
+
+| Tool | Purpose |
+|------|---------|
+| LINtax | Genome similarity-based lineage classification |
+| StrainScan | Marker-based strain identification |
+| StrainGE | Strain detection in low-abundance metagenomes |
+| Sourmash | MinHash-based genome similarity search |
+
+---
+
+## Repository structure
+
+```text
 MetaChlam/
- ├── bin/
- │    ├── global_report.py           # Script to generate the global report
- │    ├── lingroups.txt              # LIN group taxonomy file
- │    └── report-lin.py              # Script to generate LIN reports
- ├── databases/
- │    ├── LINtax_db/                 # LINtax database
- │    ├── pan-genome-db_99.hdf5      # Pan-genome database for StrainGE
- │    ├── sourmash_db.sbt.zip        # Sourmash database
- │    └── strainscan_db/             # StrainScan database
- ├── envs/
- │    ├── strainscan_conda_env.yml   # Conda environment for StrainScan
- │    ├── lintax_conda_env.yml       # Conda environment for LINtax & Kraken2
- │    ├── strainge_conda_env.yml     # Conda environment for StrainGST
- │    └── sourmash_conda_env.yml     # Conda environment for Sourmash
- ├── main.nf                         # Main Nextflow pipeline
- ├── nextflow.config                 # Nextflow configuration file
- ├── output/                         # Directory where all outputs are saved
- │    └── (Generated output files)
- └── sample/                         # Directory where all inputs are saved
-      ├── sample_R1.fastq            # Example input read (R1)
-      └── sample_R2.fastq            # Example input read (R2)
+├── bin/                  Helper scripts
+├── databases/            Organism-specific reference databases
+├── envs/                 Conda environment files
+├── main.nf               Main Nextflow workflow
+├── nextflow.config       Pipeline configuration
+├── conf/                 Optional execution profiles
+└── README.md
+```
 
+---
 
+## Output
 
+MetaChlam generates:
+
+- Individual reports from each strain typing method
+- A combined consensus summary report
+- Tool-specific log files
+- Nextflow execution reports and logs
+
+---
+
+## Customizing MetaChlam
+
+The workflow is currently configured with curated ***Chlamydia trachomatis*** databases for LINtax, StrainScan, StrainGE, and Sourmash.
+
+To adapt MetaChlam for another bacterial species, replace the organism-specific reference databases for each tool with databases built for the target organism. No changes to the overall workflow architecture are required.
+
+For guidance on adapting MetaChlam to additional pathogens, please contact:
+
+**Parul Sharma**  
+Department of Infectious Diseases  
+Emory University  
+📧 parul.sharma2@emory.edu
+
+---
+
+## Citation
+
+If you use MetaChlam in your research, please cite:
+
+> Sharma P, Dean D, Read TD. 
+> *Detecting and typing Chlamydia trachomatis strains in metagenomes using the MetaChlam pipeline* bioRxiv (2026).   
+DOI: https://doi.org/10.64898/2026.08.18.745514 :contentReference[oaicite:0]{index=0} 
+> *(Publication details to be added upon publication.)*
+
+---
+
+## License
+
+MIT License
