@@ -154,8 +154,7 @@ If you use MetaChlam in your research, please cite:
 
 > Sharma P, Dean D, Read TD. 
 > *Detecting and typing Chlamydia trachomatis strains in metagenomes using the MetaChlam pipeline* bioRxiv (2026).   
-DOI: https://doi.org/10.64898/2026.08.18.745514 :contentReference[oaicite:0]{index=0} 
-> *(Publication details to be added upon publication.)*
+DOI: https://doi.org/10.64898/2026.08.18.745514 
 
 ---
 
